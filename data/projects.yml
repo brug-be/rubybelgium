@@ -1,26 +1,22 @@
 -
   name: BRUG
   tagline: Belgian Ruby User Group
-  logo: http://lorempixel.com/360/289/abstract/1
+  logo: brug.jpg
   link: "#project_brug"
 -
   name: Ruby Camp
   tagline: A Weekend Codefest
-  logo: http://lorempixel.com/360/289/abstract/2
+  logo: rubycamp.jpg
 -
   name: Ruby Burgers
   tagline: Because Burgers
-  logo: http://lorempixel.com/360/289/abstract/3
+  logo: rubyburgers.jpg
 -
   name: Rails Girls Brussels
   tagline: The Belgian Chapter
-  logo: http://lorempixel.com/360/289/abstract/4
--
-  name: Ruby Nord
-  tagline: Our Neighbours From Lille
-  logo: http://lorempixel.com/360/289/abstract/5
+  logo: railsgirls.jpg
 -
   name: Ruby Jobs
   tagline: Find a job or advertise your company
-  logo: http://lorempixel.com/360/289/abstract/6
+  logo: rubyjobs.jpg
 

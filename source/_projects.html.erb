@@ -15,7 +15,7 @@
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="<%= project.logo %>" class="img-responsive" alt="<%= project.name %> Logo">
+                    <%= image_tag project.logo, class: 'img-responsive', alt: project.name %>
                 </a>
                 <div class="portfolio-caption">
                     <h4><%= project.name %></h4>
