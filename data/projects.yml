@@ -19,6 +19,11 @@
   logo: railsgirls.jpg
   link: http://railsgirls.com/brussels
 -
+  name: Slack Team
+  tagline: "Say hello, ask a question, find a job, and much more"
+  logo: slack.png
+  link: https://rubyburgers.herokuapp.com/
+-
   name: Ruby Belgium Job Board
   tagline: Find a job or advertise your company
   logo: rubyjobs.jpg
