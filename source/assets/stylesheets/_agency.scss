@@ -534,6 +534,13 @@ section#contact {
 	.section-heading {
 		color: white;
 	}
+	li, a, p {
+		color: white;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
 	.form-group {
 		margin-bottom: 25px;
 		input,
