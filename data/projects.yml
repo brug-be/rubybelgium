@@ -7,16 +7,20 @@
   name: Ruby Camp
   tagline: A Weekend Codefest
   logo: rubycamp.jpg
+  link: http://rubycamp.brug.be/
 -
   name: Ruby Burgers
   tagline: Because Burgers
   logo: rubyburgers.jpg
+  link: http://www.meetup.com/ruby_burgers-rb
 -
   name: Rails Girls Brussels
   tagline: The Belgian Chapter
   logo: railsgirls.jpg
+  link: http://railsgirls.com/brussels
 -
-  name: Ruby Jobs
+  name: Ruby Belgium Job Board
   tagline: Find a job or advertise your company
   logo: rubyjobs.jpg
+  link: https://github.com/brug-be/jobboard
 
