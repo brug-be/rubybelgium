@@ -3,7 +3,6 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Next Events</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
         </div>
         <div class="row">
@@ -13,7 +12,7 @@
                     <li class="<%= index.odd? ? 'timeline-inverted' : '' %>">
                         <div class="timeline-image">
                             <% if event.image %>
-                            <img class="img-circle img-responsive" src="<%= event.image %>" alt="<%= event.date %>">
+                            <%= image_tag event.image, class: "img-circle img-responsive", alt: event.date %>
                             <% end %>
                         </div>
                         <div class="timeline-panel">
