@@ -17,3 +17,7 @@ header{
 .navbar, .intro-lead-in, .intro-heading {
   text-shadow: 1px 1px 2px black;
 }
+
+.navbar.navbar-shrink {
+  text-shadow: none;
+}
