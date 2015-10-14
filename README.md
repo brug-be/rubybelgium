@@ -1,6 +1,6 @@
 # RubyBelgium.be
 
-Landing page for the Ruby Belgium association.
+Home page for the Ruby Belgium association.
 
 You can preview it at http://otagi.github.io/rubybelgium.
 
