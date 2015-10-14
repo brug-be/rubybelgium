@@ -10,7 +10,7 @@
             <% data.members.each do |member| %>
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="<%= member.image %>" class="img-responsive img-circle" alt="<%= member.name %>">
+                    <%= image_tag member.image, class: "img-responsive img-circle", alt: member.name %>
                     <h4><%= member.name %></h4>
                     <p class="text-muted"><%= member.description %></p>
                     <ul class="list-inline social-buttons">
@@ -27,11 +27,6 @@
                 </div>
             </div>
             <% end %>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-            </div>
         </div>
     </div>
 </section>

@@ -1,25 +1,25 @@
 -
   name: Christophe Philemotte
-  description: Board Member
-  image: http://lorempixel.com/225/225/people/1
+  description: President
+  image: toch.jpeg
   twitter: _toch
 -
+  name: Joren De Groof
+  description: Treasurer
+  image: joren.jpeg
+  twitter: joren
+-
   name: Oana Sipos
-  description: Board Member
-  image: http://lorempixel.com/225/225/people/2
+  description: Secretary
+  image: oana.jpg
   twitter: oanasipos
 -
   name: Yannick Schutz
   description: Board Member
-  image: http://lorempixel.com/225/225/people/3
+  image: yannick.jpeg
   twitter: yann_ck
 -
   name: Hannes Fostie
   description: Board Member
-  image: http://lorempixel.com/225/225/people/4
+  image: hannes.png
   twitter: hannesfostie
--
-  name: Joren De Groof
-  description: Board Member
-  image: http://lorempixel.com/225/225/people/5
-  twitter: joren
