@@ -1,0 +1,26 @@
+%section#events
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading Next Events
+    .row
+      .col-lg-12
+        %ul.timeline
+          - data.events.each_with_index do |event, index|
+            %li{:class => index.odd? ? 'timeline-inverted' : ''}
+              .timeline-image
+                - if event.image
+                  = image_tag event.image, class: "img-circle img-responsive", alt: event.date
+              .timeline-panel
+                .timeline-heading
+                  %h4= event.date
+                  %h4.subheading= event.title
+                .timeline-body
+                  %p.text-muted= event.description
+          %li.timeline-inverted
+            .timeline-image
+              %h4
+                Be Part
+                %br
+                  Of Our
+                  %br Story!
