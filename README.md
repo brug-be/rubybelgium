@@ -12,6 +12,17 @@ The site is based on [Middleman](https://middlemanapp.com) and the [Agency](http
 2. Install the gems (`cd rubybelgium ; bundle install`)
 3. Serve the site locally (`middleman server`)
 
+## Deployment
+
+To deploy the master branch on Github pages:
+
+```shell
+git checkout master
+middleman deploy --build-before
+```
+
+It will build the static site, create a commit on the _gh-pages_ branch, and push it online. Github pages automatically takes care of the rest.
+
 ## Contributing
 
 Discuss features:
