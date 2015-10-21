@@ -12,12 +12,21 @@
 
 header{
   background-image: image-url('banner.jpg');
+  .layer {
+    background-color: rgba(0,0,0,0.15);
+  }
 }
 
 .navbar, .intro-lead-in, .intro-heading {
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 5px 5px 5px #111;
 }
 
 .navbar.navbar-shrink {
   text-shadow: none;
+}
+
+#portfolio, #events {
+  .section-heading {
+    margin-bottom: 75px;
+  }
 }

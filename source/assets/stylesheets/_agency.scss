@@ -159,7 +159,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-	background-image: url('../img/header-bg.jpg');
 	background-repeat: none;
 	background-attachment: scroll;
 	background-position: center center;
@@ -182,6 +181,12 @@ header {
 			font-size: 50px;
 			line-height: 50px;
 			margin-bottom: 25px;
+		}
+	}
+	.background-caption {
+		bottom: 0;
+		a {
+			color: gray;
 		}
 	}
 }
