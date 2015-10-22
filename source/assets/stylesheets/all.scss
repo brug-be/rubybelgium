@@ -30,3 +30,37 @@ header{
     margin-bottom: 75px;
   }
 }
+
+#contact {
+  ul.social-buttons {
+    $button-size: 70px;
+
+    li {
+      overflow: hidden;
+      margin: 0 1.5%;
+
+      a {
+        background-color: white;
+        color: $gray-darkest;
+        font-size: $button-size * 0.5;
+        width: $button-size;
+        height: $button-size;
+        line-height: $button-size;
+
+        &:hover, &:focus, &:active {
+          background-color: $brand-primary;
+          color: white;
+        }
+      }
+    }
+
+    .tooltip-inner {
+      background-color: white;
+      color: $gray-darkest;
+    }
+
+    .tooltip-arrow {
+      border-top-color: white;
+    }
+  }
+}

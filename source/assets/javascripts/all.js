@@ -5,3 +5,5 @@
 //= require classie
 //= require cbpAnimatedHeader
 //= require agency
+
+$('#contact ul.social-buttons a').tooltip();
