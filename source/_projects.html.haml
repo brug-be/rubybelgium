@@ -1,0 +1,16 @@
+%section#portfolio.bg-light-gray
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading Our Projects
+    .row
+      - data.projects.each do |project|
+        .col-md-4.col-sm-6.portfolio-item
+          = link_to project.link, class: 'portfolio-link' do
+            .portfolio-hover
+              .portfolio-hover-content
+                %i.fa.fa-plus.fa-3x
+            = image_tag project.logo, class: 'img-responsive', alt: project.name
+          .portfolio-caption
+            %h4= project.name
+            %p.text-muted= project.tagline
