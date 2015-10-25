@@ -20,3 +20,4 @@ gem "bootstrap-sass", require: false
 gem 'font-awesome-sass', '~> 4.4.0', require: false
 
 gem "middleman-minify-html"
+gem "middleman-imageoptim"
