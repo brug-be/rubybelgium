@@ -1,20 +1,4 @@
 -
-  date: 5 January 2016
-  title: Ghent BRUG Meeting
-  description: >
-                Let's code together. It's simple: bring your current code
-                problem, code on an open source project, or just come to help.
-  image: brug.png
-  link: http://www.meetup.com/fr/brug__/events/226908912/
--
-  date: 19 January 2016
-  title: Brussels BRUG Meeting
-  description: >
-                Let's code together. It's simple: bring your current code
-                problem, code on an open source project, or just come to help.
-  image: brug.png
-  link: http://www.meetup.com/fr/brug__/events/226187229/
--
   date: 12–14 February 2016
   title: RubyCamp Winter 2016
   description: >
@@ -29,3 +13,17 @@
                 A new Rails Girls is in the works for early 2016.
                 Stay tuned for more info!
   image: railsgirls.png
+-
+  date: 23 February 2016
+  title: Brussels BRUG Meeting
+  description: >
+                Let's code together. It's simple: bring your current code
+                problem, code on an open source project, or just come to help.
+  image: brug.png
+  link: http://www.meetup.com/fr-FR/brug__/events/228240599/
+-
+  date: 24 February 2016
+  title: Rails Metal Burgers
+  description: It's time for a monthly burger gathering again.
+  image: rubyburgers.png
+  link: http://www.meetup.com/fr-FR/ruby_burgers-rb/events/228776925/
