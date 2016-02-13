@@ -1,0 +1,12 @@
+.border-gradient {
+  position: relative;
+  &:after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient( to right, $brand-primary, #EAB900);
+  }
+}

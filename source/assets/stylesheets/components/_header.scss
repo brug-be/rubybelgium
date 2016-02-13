@@ -1,0 +1,21 @@
+.header {
+	color: white;
+  margin-top: 50px ;
+  padding: 100px 0;
+  background: $brand-primary;
+
+  .btn {
+    border: none;
+    border-radius: $btn-border-radius-base;
+  }
+}
+
+.header__moto__title {
+  font-weight: 300;
+  margin-bottom: $padding-base-horizontal * 4;
+  margin-top: 0;
+}
+
+.ruby-icon {
+  max-width: 100%;
+}
