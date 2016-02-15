@@ -1,29 +1,17 @@
 @charset "UTF-8";
 
+@import "variables";
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-@import "variables";
 @import "mixins";
 @import "agency";
-
-header{
-  background-image: image-url('banner.jpg');
-  .layer {
-    background-color: rgba(0,0,0,0.15);
-  }
-}
-
-.navbar, .intro-lead-in, .intro-heading {
-  text-shadow: 5px 5px 5px #111;
-}
-
-.navbar.navbar-shrink {
-  text-shadow: none;
-}
+@import "components/header";
+@import "components/navbar";
+@import "components/border-gradient";
 
 #portfolio, #events {
   .section-heading {
@@ -63,4 +51,17 @@ header{
       border-top-color: white;
     }
   }
+}
+
+.display-table {
+  display: table;
+}
+
+.display-table-cell {
+  display: table-cell;
+  float: none;
+}
+
+.align-vertical {
+  vertical-align: middle;
 }

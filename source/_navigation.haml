@@ -1,24 +1,25 @@
 %nav.navbar.navbar-default.navbar-fixed-top
   .container
     .navbar-header.page-scroll
-      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand.page-scroll{:href => "#page-top"} Ruby Belgium
+      %a.navbar-brand.page-scroll{href: "#page-top"}
+        %img{src: '/assets/images/logo.svg', alt: 'Ruby Belgium'}
 
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
         %li.hidden
-          %a{:href => "#page-top"}
+          %a{href: "#page-top"}
         %li
-          %a.page-scroll{:href => "#about"} About
+          %a.page-scroll{href: "#about"} About
         %li
-          %a.page-scroll{:href => "#portfolio"} Projects
+          %a.page-scroll{href: "#portfolio"} Projects
         %li
-          %a.page-scroll{:href => "#events"} Events
+          %a.page-scroll{href: "#events"} Events
         %li
-          %a.page-scroll{:href => "#members"} Members
+          %a.page-scroll{href: "#members"} Members
         %li
-          %a.page-scroll{:href => "#contact"} Contact
+          %a.page-scroll{href: "#contact"} Contact

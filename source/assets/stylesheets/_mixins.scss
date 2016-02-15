@@ -38,15 +38,6 @@
 	}
 }
 
-// Background Features
-
-@mixin background-cover() {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 // Font Selections
 
 @mixin serif-font() {
@@ -62,6 +53,5 @@
 }
 
 @mixin heading-font() {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

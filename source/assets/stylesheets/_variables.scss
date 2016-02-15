@@ -1,8 +1,14 @@
 // Variables
-
-$brand-primary: rgb(255, 15, 33);
+$font-size-base: 16px;
+$brand-primary: #780202;
 $brand-danger: #e74c3c;
 $gray-darkest: #222;
 $gray: #777;
 $gray-lighter: #f7f7f7;
 $placeholder-text: #bbbbbb;
+$navbar-default-bg: $brand-primary;
+$font-size-h1: $font-size-base * 3;
+$navbar-default-link-color: white;
+$navbar-default-link-active-color: $navbar-default-link-color;
+$navbar-default-link-hover-color: $navbar-default-link-color;
+$btn-border-radius-base: 2px;
