@@ -1,0 +1,25 @@
+---
+title: Ruby shops
+---
+- csv = csv_data('bnlrubyshops.csv')
+
+%header.header
+  .layer
+    .container
+      %h1.text-center List of Benelux companies that do ruby.
+
+%section#ruby-shops.bg-light-gray
+  .container
+    - csv.group_by {|i| i[:city] }.each do |group|
+      .row
+        .col-lg-12
+          %h2.page-header.text-center
+            = group[0]
+      - group[1].each_slice(3) do |row|
+        .row
+          - row.each do |entry|
+            .col-md-4.col-sm-6
+              = link_to entry[:website] do
+                .well
+                  %h4= entry[:company]
+                  %p.text-muted= entry[:category]

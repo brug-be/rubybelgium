@@ -8,16 +8,12 @@
 @import "font-awesome";
 
 @import "mixins";
+@import "components/utilities";
 @import "agency";
 @import "components/header";
 @import "components/navbar";
 @import "components/border-gradient";
-
-#portfolio, #events {
-  .section-heading {
-    margin-bottom: 75px;
-  }
-}
+@import "components/portfolio";
 
 #contact {
   ul.social-buttons {
