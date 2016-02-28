@@ -1,3 +1,5 @@
+require 'open-uri'
+
 helpers do
   def link_to_if(condition, name, options = {}, html_options = {}, &block)
     if condition
@@ -9,6 +11,12 @@ helpers do
         ERB::Util.html_escape(name)
       end
     end
+  end
+
+  def csv_data
+    csv_data = open("https://raw.githubusercontent.com/brug-be/rubyshops/master/bnlrubyshops.csv").read
+    hash = CSV.new(csv_data, headers: true, header_converters: :symbol)
+    return hash.to_a.map { |row| row.to_hash }
   end
 end
 
