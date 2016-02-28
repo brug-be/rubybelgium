@@ -1,13 +1,10 @@
 %footer
   .container
     .row
-      .col-md-4
+      .col-md-6.text-left
         %span.copyright
           Copyright &copy; Ruby Belgium ASBL/VZW #{Date.today.year}
-      .col-md-4
-      .col-md-4
+      .col-md-6.text-right
         %ul.list-inline.quicklinks
           %li
-            %a{:href => "#"} Privacy Policy
-          %li
-            %a{:href => "#"} Terms of Use
+            = link_to 'Code of Conduct', 'https://github.com/brug-be/code_of_conduct'
