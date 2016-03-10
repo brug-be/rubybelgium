@@ -1,29 +1,23 @@
 -
-  date: 12–14 February 2016
-  title: RubyCamp Winter 2016
-  description: >
-                A code retreat during a whole weekend in Belgium with fellow
-                Rubyists. A good time to share, pair, learn, build, and code.
-  image: rubycamp.png
-  link: http://rubycamp.rubybelgium.be
--
-  date: 19–20 February 2016
-  title: Rails Girls Brussels
-  description: >
-                A new Rails Girls is in the works for early 2016.
-                Stay tuned for more info!
-  image: railsgirls.png
--
-  date: 23 February 2016
+  date: 15 March 2016
   title: Brussels BRUG Meeting
   description: >
-                Let's code together. It's simple: bring your current code
-                problem, code on an open source project, or just come to help.
+                Benjamin Roth will give his talk<br>
+                “Code Ruby like you build Lego”
   image: brug.png
-  link: http://www.meetup.com/fr-FR/brug__/events/228240599/
+  link: http://www.meetup.com/fr-FR/ruby_belgium/events/228240655/
 -
-  date: 24 February 2016
-  title: Rails Metal Burgers
-  description: It's time for a monthly burger gathering again.
+  date: 21 March 2016
+  title: Ghent BRUG with special Gitlab guest
+  description: >
+                Marin Jankovski from Gitlab will give a talk about<br>
+                “How we package and distribute GitLab”
+  image: brug.png
+  link: http://www.meetup.com/fr-FR/ruby_belgium/events/228240655/
+-
+  date: Soon
+  title: Ruby Burgers
+  description: >
+    A new monthly burger gathering is coming.<br>
+    Stay tuned!
   image: rubyburgers.png
-  link: http://www.meetup.com/fr-FR/ruby_burgers-rb/events/228776925/
