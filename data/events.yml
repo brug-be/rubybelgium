@@ -1,23 +1,8 @@
 -
-  date: 15 March 2016
+  date: 19 April 2016
   title: Brussels BRUG Meeting
   description: >
-                Benjamin Roth will give his talk<br>
-                “Code Ruby like you build Lego”
+    Double talk treat with<br>
+    Arne Brasseur and Marius Andra
   image: brug.png
-  link: http://www.meetup.com/fr-FR/ruby_belgium/events/228240655/
--
-  date: 21 March 2016
-  title: Ghent BRUG with special Gitlab guest
-  description: >
-                Marin Jankovski from Gitlab will give a talk about<br>
-                “How we package and distribute GitLab”
-  image: brug.png
-  link: http://www.meetup.com/fr-FR/ruby_belgium/events/229486020/
--
-  date: 30 March 2016
-  title: Back to the roots rubyburger
-  description: >
-    Yet another awesome monthly burger at our good-old-place Houtsiplou
-  image: rubyburgers.png
-  link: http://www.meetup.com/ruby_belgium/events/229490000/
+  link: http://www.meetup.com/fr-FR/ruby_belgium/events/228240658/
