@@ -42,7 +42,6 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	@include heading-font;
 	font-weight: 700;
 }
 
@@ -62,19 +61,20 @@ h1, h2, h3, h4, h5, h6 {
 
 section {
 	padding: 100px 0;
-	h2.section-heading {
+	.section-heading {
 		font-size: 40px;
 		margin-top: 0;
 		margin-bottom: 75px;
 	}
-	h3.section-subheading {
-		font-size: 16px;
-		@include serif-font;
-		text-transform: none;
-		font-style: italic;
-		font-weight: 400;
-		margin-bottom: 75px;
-	}
+}
+
+.section-subheading {
+	font-size: 16px;
+	@include serif-font();
+	text-transform: none;
+	font-style: italic;
+	font-weight: 400;
+	margin-bottom: 75px;
 }
 
 @media(min-width:768px) {
@@ -336,22 +336,18 @@ section#contact {
 		box-shadow: none;
 	}
 	::-webkit-input-placeholder {
-	   @include heading-font;
 	   font-weight: 700;
 	   color: $placeholder-text;
 	}
 	:-moz-placeholder { /* Firefox 18- */
-	   @include heading-font;
 	   font-weight: 700;
 	   color: $placeholder-text;
 	}
 	::-moz-placeholder {  /* Firefox 19+ */
-	   @include heading-font;
 	   font-weight: 700;
 	   color: $placeholder-text;
 	}
 	:-ms-input-placeholder {
-	   @include heading-font;
 	   font-weight: 700;
 	   color: $placeholder-text;
 	}
@@ -367,13 +363,11 @@ footer {
 	text-align: center;
 	span.copyright {
 		line-height: 40px;
-		@include heading-font;
 		text-transform: none;
 	}
 	ul.quicklinks {
 		margin-bottom: 0;
 		line-height: 40px;
-		@include heading-font;
 		text-transform: none;
 	}
 }
@@ -428,12 +422,6 @@ ul.social-buttons {
 		}
 		p {
 			margin-bottom: 30px;
-		}
-		p.item-intro {
-			margin: 20px 0 30px;
-			@include serif-font;
-			font-style: italic;
-			font-size: 16px;
 		}
 		ul.list-inline {
 			margin-bottom: 30px;
