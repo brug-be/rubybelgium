@@ -34,6 +34,9 @@ configure :build do
   activate :imageoptim
   activate :asset_hash
   activate :relative_assets
+
+  require_relative "./lib/build_cleaner"
+  activate :build_cleaner
 end
 
 activate :google_analytics do |ga|
