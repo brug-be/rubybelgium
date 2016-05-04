@@ -1,25 +1,32 @@
 ---
 title: Ruby shops
 ---
-- csv = csv_data
+- csv = ruby_shops.group_by {|i| i[:city] }
 
 %header.header
   .layer
-    .container
-      %h1.text-center List of Benelux companies that do ruby.
+    .container.text-center
+      %h1 List of Benelux companies that do ruby.
+      %h3
+        - csv.each_with_index do |group, index|
+          - group_name = group[0]
+          - unless index == 0
+            = ' - '
+          %a{href: "##{group_name.underscore}"}
+            = group_name
 
-%section#ruby-shops.bg-light-gray
+%section.bg-light-gray
   .container
-    - csv.group_by {|i| i[:city] }.each do |group|
-      .row
+    - csv.each do |group|
+      - group_name = group[0]
+      .row{id: group_name.underscore}
         .col-lg-12
           %h2.page-header.text-center
-            = group[0]
+            = group_name
       - group[1].each_slice(3) do |row|
         .row
           - row.each do |entry|
             .col-md-4.col-sm-6
-              = link_to entry[:website] do
-                .well
-                  %h4= entry[:company]
-                  %p.text-muted= entry[:category]
+              = link_to entry[:website], class: 'rubyshop well' do
+                %h4= entry[:company]
+                %p.text-muted= entry[:category]
