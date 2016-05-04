@@ -34,15 +34,12 @@ configure :build do
   activate :imageoptim
   activate :asset_hash
   activate :relative_assets
+  activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-76403519-1'
+  end
 end
 
 # middleman-deploy
 activate :deploy do |deploy|
   deploy.method = :git
-end
-
-configure :production do
-  activate :google_analytics do |ga|
-    ga.tracking_id = 'UA-76403519-1'
-  end
 end
