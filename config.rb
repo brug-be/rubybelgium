@@ -44,6 +44,10 @@ activate :google_analytics do |ga|
   ga.development = false
 end
 
+configure :development do
+  activate :livereload
+end
+
 # middleman-deploy
 activate :deploy do |deploy|
   deploy.method = :git
