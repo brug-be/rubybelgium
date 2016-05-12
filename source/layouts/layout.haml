@@ -5,7 +5,8 @@
     %meta{charset: "utf-8"}/
     %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
 
-    %title= current_page.data.title || "The Middleman"
+    %title= current_page.data.title || "Ruby Belgium"
+    %meta{name: "description", content: current_page.data.description || "The belgian community group promoting ruby usage and ruby jobs market"}/
 
     = stylesheet_link_tag "all"
 
@@ -20,3 +21,4 @@
   %body{class: page_classes}
     = partial :navigation
     = yield
+    = google_analytics_universal_tag
