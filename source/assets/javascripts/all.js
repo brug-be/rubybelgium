@@ -5,5 +5,7 @@
 //= require classie
 //= require cbpAnimatedHeader
 //= require agency
+//= require jsrender
+//= require meetup
 
 $('#contact ul.social-buttons a').tooltip();
