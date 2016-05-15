@@ -1,31 +1,31 @@
 -
   name: BRUG
-  tagline: Belgian Ruby User Group
+  tagline: Monthly meetups
   logo: brug.jpg
   link: http://www.meetup.com/ruby_belgium
 -
   name: Ruby Camp
-  tagline: A Weekend Codefest
+  tagline: (Bi-)Yearly weekend gathering
   logo: rubycamp.jpg
   link: http://rubycamp.rubybelgium.be/
 -
   name: Ruby Burgers
-  tagline: Because Burgers
+  tagline: Informal after-work meetups
   logo: rubyburgers.jpg
   link: http://www.meetup.com/ruby_belgium
 -
   name: Rails Girls Brussels
-  tagline: The Belgian Chapter
+  tagline: HTML and Rails coaching for women
   logo: railsgirls.jpg
   link: http://railsgirls.com/brussels
 -
   name: Slack Team
-  tagline: "Say hello, ask a question, find a job, and much more"
+  tagline: 24/7 chat for help, and discussions
   logo: slack.jpg
   link: https://rubyburgers.herokuapp.com/
 -
   name: Ruby Belgium Job Board
-  tagline: Find a job or advertise your company
+  tagline: List of available developer jobs
   logo: rubyjobs.jpg
   link: https://github.com/brug-be/jobboard
 
