@@ -17,6 +17,22 @@
 @import "components/portfolio";
 @import "components/rubyshop";
 
+#events {
+  .timeline-image {
+    background-color: white;
+    color: $gray;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $brand-primary;
+    }
+  }
+}
 
 #contact {
   ul.social-buttons {
