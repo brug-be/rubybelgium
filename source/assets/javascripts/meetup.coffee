@@ -8,7 +8,7 @@ get_meetup_events = ->
   PARAMS     = {fields: 'group_photo'}
 
   $.ajax EVENTS_URL, dataType: 'jsonp', data: PARAMS, success: (response) ->
-    display_meetup_events(response.data)
+    display_meetup_events response.data
 
 display_meetup_events = (events) ->
   return if events.length == 0
@@ -20,12 +20,15 @@ display_meetup_events = (events) ->
   $(events).each (index, event) ->
     html = template.render
       class:       ('timeline-inverted' if (index % 2 != 0))
-      link:        event.link
-      image:       event.group.photo.photo_link
-      date:        new Intl.DateTimeFormat().format(new Date(event.time))
+      link:        filter_attribute(event.link)
+      image:       filter_attribute(event.group.photo.photo_link)
+      date:        new Intl.DateTimeFormat().format(new Date(parseInt(event.time)))
       title:       event.name
       description: event.venue.name
 
     $('#events-list').append html
+
+filter_attribute = (attribute) ->
+  attribute.replace /[\t\n\f >"']/g, ''
 
 $(document).ready ready
