@@ -11,7 +11,11 @@ get_meetup_events = ->
     display_meetup_events(response.data)
 
 display_meetup_events = (events) ->
+  return if events.length == 0
+
   template = $.templates("#event-template")
+
+  $('#events-list li.more').remove()
 
   $(events).each (index, event) ->
     html = template.render
