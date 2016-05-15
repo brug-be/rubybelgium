@@ -21,12 +21,20 @@ display_meetup_events = (events) ->
     html = template.render
       class:       ('timeline-inverted' if (index % 2 != 0))
       link:        filter_attribute(event.link)
-      image:       filter_attribute(event.group.photo.photo_link)
+      image:       event_icon(event.name) || filter_attribute(event.group.photo.photo_link)
       date:        new Intl.DateTimeFormat().format(new Date(parseInt(event.time)))
       title:       event.name
       description: event.venue.name
 
     $('#events-list').append html
+
+event_icon = (event_name) ->
+  if event_name.match /BRUG/i
+    '<%= image_path "brug-icon.png" %>'
+  else if event_name.match /burger/i
+    '<%= image_path "rubyburgers-icon.png" %>'
+  else
+    undefined
 
 filter_attribute = (attribute) ->
   attribute.replace /[\t\n\f >"']/g, ''
