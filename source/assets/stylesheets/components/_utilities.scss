@@ -1,3 +1,20 @@
 .marginless {
   margin: 0 !important;
 }
+
+.display-table {
+  display: table;
+}
+
+.display-table-cell {
+  display: table-cell;
+  float: none;
+}
+
+.align-vertical {
+  vertical-align: middle;
+}
+
+.img-centered {
+	margin: 0 auto;
+}

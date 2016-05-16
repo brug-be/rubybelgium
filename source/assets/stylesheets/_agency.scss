@@ -2,51 +2,6 @@
 
 body {
 	overflow-x: hidden;
-	@include body-font;
-}
-
-.text-muted {
-	color: $gray;
-}
-
-.text-primary {
-	color: $brand-primary;
-}
-
-p {
-	font-size: 14px;
-	line-height: 1.75;
-}
-
-p.large {
-	font-size: 16px;
-}
-
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-	outline: none;
-}
-
-a {
-	color: $brand-primary;
-}
-
-a:hover,
-a:focus,
-a:active,
-a.active {
-	color: darken($brand-primary, 10%);
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 700;
-}
-
-.img-centered {
-	margin: 0 auto;
 }
 
 .bg-light-gray {
@@ -70,7 +25,6 @@ section {
 
 .section-subheading {
 	font-size: 16px;
-	@include serif-font();
 	text-transform: none;
 	font-style: italic;
 	font-weight: 400;
@@ -89,7 +43,6 @@ section {
 	margin: 15px 0;
 	text-transform: none;
 }
-
 
 // Timeline
 
@@ -303,7 +256,7 @@ aside.clients {
 
 // Contact Section
 
-section#contact {
+#contact {
 	background-color: $gray-darkest;
 	background-image: image-url('map-image.png');
 	background-position: center;
@@ -374,7 +327,7 @@ footer {
 
 // Social Buttons
 
-ul.social-buttons {
+.social-buttons {
 	margin-bottom: 0;
 	li {
 		a {

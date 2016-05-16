@@ -43,7 +43,6 @@
 }
 
 .portfolio-caption {
-  max-width: 400px;
   margin: 0 auto;
   background-color: white;
   text-align: center;
@@ -56,7 +55,7 @@
 
   p {
     font-style: italic;
-    font-size: 16px;
+    font-size: $font-size-small;
     margin: 0;
   }
 }
