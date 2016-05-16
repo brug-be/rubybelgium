@@ -2,8 +2,6 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require jquery.easing.min
-//= require classie
-//= require cbpAnimatedHeader
 //= require agency
 //= require jsrender
 //= require image_path
