@@ -22,7 +22,7 @@ display_meetup_events = (events) ->
       class:       ('timeline-inverted' if (index % 2 != 0))
       link:        filter_attribute(event.link)
       image:       event_icon(event.name) || filter_attribute(event.group.photo.photo_link)
-      date:        new Intl.DateTimeFormat().format(new Date(parseInt(event.time)))
+      date:        format_date(event.time)
       title:       event.name
       description: event.venue.name
 
@@ -38,5 +38,9 @@ event_icon = (event_name) ->
 
 filter_attribute = (attribute) ->
   attribute.replace /[\t\n\f >"']/g, ''
+
+format_date = (timestamp) ->
+  date = new Date(parseInt(timestamp))
+  "#{date.getDate()}/#{date.getMonth()+1}/#{date.getFullYear()}"
 
 $(document).ready ready
