@@ -30,9 +30,9 @@ display_meetup_events = (events) ->
 
 event_icon = (event_name) ->
   if event_name.match /BRUG/i
-    '<%= image_path "brug-icon.png" %>'
+    image_path 'brug-icon.png'
   else if event_name.match /burger/i
-    '<%= image_path "rubyburgers-icon.png" %>'
+    image_path 'rubyburgers-icon.png'
   else
     undefined
 

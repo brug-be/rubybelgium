@@ -6,6 +6,7 @@
 //= require cbpAnimatedHeader
 //= require agency
 //= require jsrender
+//= require image_path
 //= require meetup
 
 $('#contact ul.social-buttons a').tooltip();
