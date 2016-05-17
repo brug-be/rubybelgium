@@ -13,19 +13,20 @@
 @import "colors";
 @import "components/**/*";
 
-// Events
-.timeline-image {
-  background-color: white;
-  color: $gray;
+#events {
+  .timeline-image {
+    background-color: white;
+    color: $gray;
 
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: $brand-primary;
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $brand-primary;
+    }
   }
 }
 
