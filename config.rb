@@ -13,6 +13,12 @@ helpers do
     end
   end
 
+  def image_tag_2x(source, options = {})
+    source_2x = source.dup.insert(source.rindex('.'), '@2x')
+    options[:srcset] = "#{image_path(source_2x)} 2x"
+    image_tag source, options
+  end
+
   def ruby_shops
     csv_data = open('https://raw.githubusercontent.com/brug-be/rubyshops/master/bnlrubyshops.csv').read
     hash = CSV.new(csv_data, headers: true, header_converters: :symbol)

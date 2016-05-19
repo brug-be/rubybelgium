@@ -13,6 +13,18 @@
 @import "colors";
 @import "components/**/*";
 
+#portfolio {
+  .portfolio-link {
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+  }
+
+  .portfolio-caption {
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+  }
+}
+
 #events {
   .timeline-image {
     background-color: white;
