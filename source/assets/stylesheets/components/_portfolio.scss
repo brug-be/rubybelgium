@@ -8,6 +8,8 @@
   position: relative;
   max-width: 400px;
   margin: 0 auto;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
 }
 
 .portfolio-hover {
@@ -44,10 +46,11 @@
 
 .portfolio-caption {
   margin: 0 auto;
-  background-color: white;
+  background-color: $gray-lighter;
   text-align: center;
   padding: 25px;
-
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
   h4 {
     text-transform: none;
     margin: 0;

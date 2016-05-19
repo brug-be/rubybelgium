@@ -1,17 +1,17 @@
 // Variables
 $font-size-base: 16px;
-$brand-primary: #911113;
+$brand-primary: #BD2628;
 $brand-secondary: darken($brand-primary, 5%);
 $brand-danger: #e74c3c;
 $gray-darkest: #222;
 $gray: #777;
 $gray-lighter: #f7f7f7;
 $placeholder-text: #bbbbbb;
-$navbar-default-bg: $brand-primary;
+$navbar-default-bg: #fff;
 $font-size-h1: $font-size-base * 3;
-$navbar-default-link-color: white;
-$navbar-default-link-active-color: $navbar-default-link-color;
-$navbar-default-link-hover-color: $navbar-default-link-color;
+$navbar-default-link-color: #111;
+// $navbar-default-link-active-color: $navbar-default-link-color;
+$navbar-default-link-hover-color: lighten(#111, 20%);
 $btn-border-radius-base: 2px;
 $line-height-base: 1.7;
 $font-family-sans-serif: 'Raleway', Helvetica, Arial, sans-serif;

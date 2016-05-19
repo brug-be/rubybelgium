@@ -1,21 +1,16 @@
 .header {
-  color: white;
+  color: $brand-primary;
   margin-top: 50px ;
   padding: 100px 0;
-  background: $brand-primary;
-  background-image: linear-gradient($brand-primary 30%, $brand-secondary);
-
-  .btn {
-    border: none;
-    border-radius: $btn-border-radius-base;
-  }
+  @include skew_bar(#fff);
 }
 
 .header__moto__title {
   margin-bottom: $padding-base-horizontal * 4;
-  margin-top: 0;
 }
 
 .ruby-icon {
   max-width: 100%;
+  color: $brand-primary;
+  // background: $brand-primary;
 }
