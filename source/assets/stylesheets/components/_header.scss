@@ -14,3 +14,8 @@
   color: $brand-primary;
   // background: $brand-primary;
 }
+
+.header__subtitle {
+  margin-top: $padding-base-horizontal * 4;
+  line-height: 1.5;
+}
