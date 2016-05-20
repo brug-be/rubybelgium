@@ -1,3 +1,19 @@
+// Text colors
+.red {
+  color: $brand-primary;
+  border-color: $brand-primary;
+}
+
 .white {
-  color: white !important; 
+  color: white !important;
+}
+
+// Backgrounds
+
+.bg-light-gray {
+	background-color: $gray-lighter;
+}
+
+.bg-darkest-gray {
+	background-color: $gray-darkest;
 }

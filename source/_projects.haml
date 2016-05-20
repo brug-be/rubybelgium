@@ -1,12 +1,12 @@
-%section#portfolio
+%section#projects
   .container
     .row
       .col-lg-12.text-center
         %h2.section-heading Our Projects
     .row
       - data.projects.each do |project|
-        .col-md-4.col-sm-6.portfolio-item
-          = link_to project.link, class: 'portfolio-link' do
+        .col-xs-6.col-md-3.portfolio-item
+          = link_to project.link, class: 'portfolio-link', rel: 'nofollow' do
             .portfolio-hover
               .portfolio-hover-content
                 %i.fa.fa-plus.fa-3x
