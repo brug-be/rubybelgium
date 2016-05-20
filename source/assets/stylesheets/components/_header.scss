@@ -18,4 +18,8 @@
 .header__subtitle {
   margin-top: $padding-base-horizontal * 4;
   line-height: 1.5;
+  margin-bottom: $padding-base-horizontal * 4;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
