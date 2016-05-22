@@ -1,0 +1,38 @@
+-
+  date: 10 Mar 2016
+  title: RubyBelgium is awesome
+  content: >
+    Join ruby Belgium today because it's awesome or come and get some burgers with us<br/>
+    Click link for more info.
+  author: Lien
+  author_image: lien.jpg
+  press_logo: rubyburgers.jpg
+  link: http://www.meetup.com/fr-FR/ruby_belgium/
+-
+  date: 11 Dec 2013
+  title: Eating Burgers with Ruby Burgers
+  content: >
+    Burgers Burgers Burgers Burgers Burgers Burgers Burgers Burgers and <br>
+    and more burgers
+  author: Boris
+  author_image: boris.jpeg
+  press_logo: rubyburgers.jpg
+  link: http://www.meetup.com/fr-FR/ruby_belgium/
+-
+  date: 20 Sep 2015
+  title: Organizing RailsGirls 2017
+  content: >
+    Girls in the news. Read more here....
+  author: Silvana
+  author_image: silvana.jpg
+  press_logo: railsgirls.jpg
+  link: http://railsgirls.com/brussels
+-
+  date: 31 Dec 1999
+  title: Brug on the News
+  content: >
+    Can't get enough of Ruby? Come code with us.
+  author: Silvana
+  author_image: silvana.jpg
+  press_logo: rubyburgers.jpg
+  link: http://www.meetup.com/fr-FR/ruby_belgium/

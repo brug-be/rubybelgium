@@ -1,0 +1,34 @@
+---
+title: Press
+---
+.container
+  %section.row#press
+    .col-lg-12.text-center
+      %h2.section-heading Press Kit
+      %hr
+      .col-xs-8.col-xs-offset-2
+        %p.lead.text-center
+        Would you like to get in touch with us?
+        / = link_to 'us?'contact.link
+        %hr
+      .row
+        - data.press.shuffle[0...3].each do |press|
+          %article.col-xs-4
+            .cards
+              %h4.title= press.title
+              %p.text-muted.font-small= press.date
+              %span.icon-center
+              = image_tag press.press_logo, class: "img-circle img-small", alt: press.title
+              .info
+                %hr.divider
+                %p.font-small.lead
+                = truncate_words press.content, length: 15
+                .press-btn.btn-lg.center-block= link_to 'Read More', press.link
+                %hr.divider
+                %span.icon-right
+                = image_tag press.author_image, class: "img-circle img-small", alt: press.author
+                %p.text-muted= press.author
+
+
+%hr.bg-darkest-gray
+= partial :footer

@@ -1,0 +1,156 @@
+// Variables
+
+$light:  #febbbb;
+$medium: #fe9090;
+$dark:   #ff5c5c;
+$dark-v1: #c84848;
+$text-color: #999;
+$cta: #00c5a7;
+$card-font-small: 15px;
+
+
+// Global Styles
+/*#press {
+  background: $light;
+  background: linear-gradient(135deg, $light 0%,$medium 45%,$dark 100%);
+  font-size: 10px;
+  padding: 2em;
+}
+.full-screen {
+  height: 100vw;
+  position: relative;
+}*/
+
+
+// General content
+.title {
+  text-align: center;
+  font-weight: 100;
+}
+.divider {
+  border-bottom: 1px solid $light;
+}
+
+
+
+/* Globals for cards */
+
+// Cards
+.cards {
+  background: #f2f2f2;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 17em;
+  padding: 1.5em;
+  position: relative;
+  transition: height 0.4s, box-shadow 0.5s;
+
+  &:hover {
+    box-shadow: 0 0 2em #999;
+    height: 38em;
+    transition: height 0.3s ease, box-shadow 0.5s ease;
+
+    .divider {
+      opacity: 0.5;
+    }
+
+    .info {
+      transition: top 0.5s ease, opacity 1s ease;
+      visibility: visible;
+      top: 1%;
+      opacity: 1;
+      .divider {
+        /*//opacity: 1;*/
+      }
+
+    .font-small {
+      font-size: $card-font-small;
+    }
+  }
+
+    .icon-center {
+      font-size: 2em;
+      left: 45%;
+      transition: font-size .3s, left .3s;
+    }
+    .icon-right {
+      font-size: 2em;
+      right: 45%;
+      transition: font-size .3s, right .3s;
+    }
+  }
+
+
+  .info {
+    position: relative;
+    visibility: hidden;
+    top: -50%;
+    opacity: 0;
+  }
+
+  .icon-center {
+    color: $light;
+    font-size: 4em;
+    text-align: center;
+    /*//text-shadow: 0 -1px 0 $dark-v1;*/
+    padding: 0em;
+    position: relative;
+    left: 43%;
+    top: 0em;
+    transition: font-size .3s ease, left .3s ease;
+  }
+
+  .icon-right {
+    color: $light;
+    font-size: 4em;
+    text-align: right;
+    /*//text-shadow: 0 -1px 0 $dark-v1;*/
+    padding: 0em;
+    position: relative;
+    right: 43%;
+    top: 0em;
+    transition: font-size .3s ease, left .3s ease;
+  }
+
+  .title {
+    color: $text-color;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .lead {
+    color: white; /*$text-color;*/
+    font-weight: 50;
+    font-size: 2em;
+    text-align: center;
+    hyphens: auto;
+  }
+
+  .press-btn {
+    color: $brand-primary; /*$cta*/
+    border: 1px solid white;
+    border-radius: 3px;
+    background: white;
+    transition: color 0.3s, background 0.3s;
+    font-size: 1em;
+    margin-top: 5px;
+    text-transform: none;
+    &:hover, :active {
+      background: $brand-primary; /* $cta; */
+      color:  white;   /*#fff;*/
+      transition: background 0.5s ease-out;
+      text-transform: none;
+    }
+  }
+
+  .img-small {
+      width: 50px;
+      height: 50px;
+  }
+} /* end of card */
+
+@media(min-width:767px) {
+  .cards {
+    height: 17em;
+  }
+}
