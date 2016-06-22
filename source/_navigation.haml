@@ -1,27 +1,38 @@
 %nav.navbar.navbar-default.navbar-fixed-top
   .container
     .navbar-header.page-scroll
-      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+      %button.navbar-toggle{"data-target" => "#rb-navbar-collapse", "data-toggle" => "collapse", type: "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand.page-scroll{href: "/"}
-        %img{src: '/assets/images/logo.svg', alt: 'Ruby Belgium'}
+        %img.animated{src: '/assets/images/logo_red.svg', alt: 'Ruby Belgium'}
 
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+    #rb-navbar-collapse.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
         %li.hidden
           %a{href: "#page-top"}
         %li
           %a.page-scroll{href: "/#about"} About
+        %li.dropdown
+          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
+            Projects
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "/ruby-belgium-user-group"} Belgium Ruby User Group
+            %li
+              %a{href: 'http://railsgirls.com/brussels', target: '_blank', rel: 'nofollow'} Rails girls
+            %li
+              %a{href: "https://www.meetup.com/ruby_belgium/", target: '_blank', rel: 'nofollow'} Ruby burgers
+            %li
+              %a{href: 'http://rubycamp.rubybelgium.be/'} Ruby Camp
         %li
-          %a.page-scroll{href: "/#portfolio"} Projects
+          %a{href: "https://www.meetup.com/ruby_belgium/", target: '_blank', rel: 'nofollow'} Events
         %li
-          %a.page-scroll{href: "/#events"} Events
+          %a{href: "https://github.com/brug-be/jobboard", target: '_blank', rel: 'nofollow'} Jobs
         %li
-          %a.page-scroll{href: "/#board"} The board
+          %a{href: "/rubyshops"} Ruby shops
         %li
           %a.page-scroll{href: "/#contact"} Contact
-        %li
-          %a.page-scroll{href: "/rubyshops"} Ruby shops

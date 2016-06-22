@@ -4,46 +4,9 @@ body {
 	overflow-x: hidden;
 }
 
-.bg-light-gray {
-	background-color: $gray-lighter;
+img {
+	max-width: 100%;
 }
-
-.bg-darkest-gray {
-	background-color: $gray-darkest;
-}
-
-// Global Section Styles
-
-section {
-	padding: 100px 0;
-	.section-heading {
-		font-size: 40px;
-		margin-top: 0;
-		margin-bottom: 75px;
-	}
-}
-
-.section-subheading {
-	font-size: 16px;
-	text-transform: none;
-	font-style: italic;
-	font-weight: 400;
-	margin-bottom: 75px;
-}
-
-@media(min-width:768px) {
-	section {
-		padding: 150px 0;
-	}
-}
-
-// Services Section
-
-.service-heading {
-	margin: 15px 0;
-	text-transform: none;
-}
-
 // Timeline
 
 .timeline {
@@ -227,25 +190,6 @@ section {
 	}
 }
 
-// Team Section
-
-.team-member {
-	text-align: center;
-	margin-bottom: 50px;
-	img {
-		margin: 0 auto;
-		border: 7px solid white;
-	}
-	h4 {
-		margin-top: 25px;
-		margin-bottom: 0;
-		text-transform: none;
-	}
-	p {
-		margin-top: 0;
-	}
-}
-
 // Clients Aside
 
 aside.clients {
@@ -309,22 +253,6 @@ aside.clients {
 	}
 }
 
-// Footer
-
-footer {
-	padding: 25px 0;
-	text-align: center;
-	span.copyright {
-		line-height: 40px;
-		text-transform: none;
-	}
-	ul.quicklinks {
-		margin-bottom: 0;
-		line-height: 40px;
-		text-transform: none;
-	}
-}
-
 // Social Buttons
 
 .social-buttons {
@@ -351,13 +279,13 @@ footer {
 		}
 	}
 }
-
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn:active:focus {
-	outline: none;
-}
+//
+// .btn:focus,
+// .btn:active,
+// .btn.active,
+// .btn:active:focus {
+// 	outline: none;
+// }
 
 .portfolio-modal {
 	.modal-content {

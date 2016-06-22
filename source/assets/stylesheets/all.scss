@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400);
 
 @import "variables";
+@import "animate";
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -12,66 +13,4 @@
 @import "agency";
 @import "colors";
 @import "components/**/*";
-
-#portfolio {
-  .portfolio-link {
-    border-radius: 8px 8px 0 0;
-    overflow: hidden;
-  }
-
-  .portfolio-caption {
-    border-radius: 0 0 8px 8px;
-    overflow: hidden;
-  }
-}
-
-#events {
-  .timeline-image {
-    background-color: white;
-    color: $gray;
-
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-
-    &:hover,
-    &:focus,
-    &:active {
-      border-color: $brand-primary;
-    }
-  }
-}
-
-#contact {
-  ul.social-buttons {
-    $button-size: 70px;
-
-    li {
-      overflow: hidden;
-      margin: 0 1.5%;
-
-      a {
-        background-color: white;
-        color: $gray-darkest;
-        font-size: $button-size * 0.5;
-        width: $button-size;
-        height: $button-size;
-        line-height: $button-size;
-
-        &:hover, &:focus, &:active {
-          background-color: $brand-primary;
-          color: white;
-        }
-      }
-    }
-
-    .tooltip-inner {
-      background-color: white;
-      color: $gray-darkest;
-    }
-
-    .tooltip-arrow {
-      border-top-color: white;
-    }
-  }
-}
+@import "sections/**/*";

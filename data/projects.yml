@@ -1,31 +1,20 @@
 -
+  name: Rails Girls Brussels
+  tagline: HTML and Rails coaching for women
+  logo: railsgirls.jpg
+  link: http://railsgirls.com/brussels
+-
   name: BRUG
   tagline: Monthly meetups
   logo: brug.jpg
-  link: http://www.meetup.com/ruby_belgium
--
-  name: Ruby Camp
-  tagline: (Bi-)Yearly weekend gathering
-  logo: rubycamp.jpg
-  link: http://rubycamp.rubybelgium.be/
+  link: /ruby-belgium-user-group
 -
   name: Ruby Burgers
   tagline: Informal after-work meetups
   logo: rubyburgers.jpg
   link: http://www.meetup.com/ruby_belgium
 -
-  name: Rails Girls Brussels
-  tagline: HTML and Rails coaching for women
-  logo: railsgirls.jpg
-  link: http://railsgirls.com/brussels
--
-  name: Slack Team
-  tagline: 24/7 chat for help, and discussions
-  logo: slack.jpg
-  link: https://rubyburgers.herokuapp.com/
--
-  name: Ruby Belgium Job Board
-  tagline: List of available developer jobs
-  logo: rubyjobs.jpg
-  link: https://github.com/brug-be/jobboard
-
+  name: Ruby Camp
+  tagline: (Bi-)Yearly weekend gathering
+  logo: rubycamp.jpg
+  link: http://rubycamp.rubybelgium.be/

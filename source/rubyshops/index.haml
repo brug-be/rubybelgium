@@ -6,13 +6,13 @@ title: Belgian companies list that uses Ruby - Ruby Belgium
 %header.header
   .layer
     .container.text-center
-      %h1 List of Benelux companies that do ruby.
-      %h3
+      %h1.animated.fadeInUp The #{ruby_shops.count} benelux companies that work with ruby
+      %h3.header__subtitle
         - csv.each_with_index do |group, index|
           - group_name = group[0]
           - unless index == 0
             = ' - '
-          %a.white{href: "##{group_name.underscore}"}
+          %a{href: "##{group_name.underscore}"}
             = group_name
 
 %section.bg-light-gray
