@@ -5,12 +5,13 @@
   &:after {
     content: '';
     position: absolute;
-    height: 50px;
+    height: 100px;
     display: block;
     background: $color;
-    transform: skewY(-2deg);
+    transform: skewY(-1.2deg);
     width: 100%;
     z-index: 1;
-    bottom: -25px;
+    bottom: -50px;
+    transform-origin: center;
   }
 }
