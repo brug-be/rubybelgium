@@ -8,6 +8,10 @@
   color: white !important;
 }
 
+.black {
+  color: black;
+}
+
 // Backgrounds
 
 .bg-light-gray {
@@ -16,4 +20,8 @@
 
 .bg-darkest-gray {
 	background-color: $gray-darkest;
+}
+
+.bg-brand-primary {
+  background-color: $brand-primary;
 }

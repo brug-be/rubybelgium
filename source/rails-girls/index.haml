@@ -1,0 +1,58 @@
+---
+title: Brug - Rails Girls Brussels - Ruby Belgium
+---
+
+%header.header
+  .layer
+    .container.text-center
+      = link_to 'http://www.railsgirls.com' do
+        .rectangle
+          = image_tag '/assets/images/rails-girls/railsgirls-logo.png', class: 'align-vertical'
+
+      %h1.animated.fadeInUp Rails Girls Brussels
+      %h3.header__subtitle
+        %p Get excited and make things!
+
+
+      .social-links
+        = link_to 'Follow @RailsGirls_BE', 'https://twitter.com/RailsGirls_BE', class: 'twitter-follow-button', data: {'data-show-count': 'false', 'data-size': 'large'}
+
+        .fb-like{ data: { href: "https://www.facebook.com/RailsGirlsBrussels", 'data-width': '200', 'data-layout': 'button_count', 'data-action': 'like', 'data-show-faces': 'true', 'data-share': 'false'}}
+
+%section.bg-light-gray
+  .container
+    .text-columns Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+%section
+  .container
+    .row
+      .col-xs-12.col-md-4.red.text-center
+        %h1 HTML and Rails coaching for women
+        %img.img{src: '/assets/images/rails-girls/railsgirls.jpg'}
+
+      .col-xs-12.col-md-8.text-center
+        %h2 2016 Team
+        .row
+        - data.coaches.each do |coach|
+          .col-xs-6.col-md-3.portfolio-item
+            = link_to "https://twitter.com/#{coach.twitter}", class: 'portfolio-link', rel: 'nofollow' do
+              .text-center.small
+                %b= coach.name
+                .black
+                  @#{coach.twitter}
+
+
+:javascript
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+
+.fb-root
+  :javascript
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=603249739823141";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
