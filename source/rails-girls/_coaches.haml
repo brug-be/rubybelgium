@@ -1,4 +1,4 @@
-%section
+%section.bg-light-gray
   .container
     .text-center
       %h2.section-heading Our Coaches
@@ -10,3 +10,9 @@
                 %b= coach.name
                 .black
                   @#{coach.twitter}
+
+
+  .social-links
+    = link_to 'Follow @RailsGirls_BE', 'https://twitter.com/RailsGirls_BE', class: 'twitter-follow-button', data: {'data-show-count': 'false', 'data-size': 'large'}
+
+    .fb-like{ data: { href: "https://www.facebook.com/RailsGirlsBrussels", 'data-width': '200', 'data-layout': 'button_count', 'data-action': 'like', 'data-show-faces': 'true', 'data-share': 'false'}}
