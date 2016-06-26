@@ -1,0 +1,12 @@
+%section
+  .container
+    .text-center
+      %h2.section-heading Our Coaches
+      .row
+        - data.coaches.each do |coach|
+          .col-xs-6.col-md-3.portfolio-item
+            = link_to "https://twitter.com/#{coach.twitter}", class: 'portfolio-link', rel: 'nofollow' do
+              .text-center
+                %b= coach.name
+                .black
+                  @#{coach.twitter}

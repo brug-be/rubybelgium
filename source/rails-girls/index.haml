@@ -11,69 +11,18 @@ title: Brug - Rails Girls Brussels - Ruby Belgium
         %p Get excited and make things!
 
       = link_to 'http://www.railsgirls.com' do
-        .rectangle
+        .col-md-offset-5.col-md-2.rglogo
           = image_tag '/assets/images/rails-girls/railsgirls-logo.png', class: 'align-vertical'
-      %br
-      %br
+
       .social-links
         = link_to 'Follow @RailsGirls_BE', 'https://twitter.com/RailsGirls_BE', class: 'twitter-follow-button', data: {'data-show-count': 'false', 'data-size': 'large'}
 
         .fb-like{ data: { href: "https://www.facebook.com/RailsGirlsBrussels", 'data-width': '200', 'data-layout': 'button_count', 'data-action': 'like', 'data-show-faces': 'true', 'data-share': 'false'}}
 
-%section.bg-light-gray
-  .container
-    .text-columns Our aim is to give tools and a community for women to understand technology and to build their ideas. We do this by providing a great experience on building things and by making technology more approachable. Learn sketching, prototyping, basic programming and get introduced to the world of technology. Rails Girls was born in Finland, but is nowadays a global, non-profit volunteer community.
-    %br
-    %br
-    .row
-      .col-xs-12.col-sm-6.col-md-3
-        %b.red You learn
-        %span.black designing, prototyping and coding with help from our coaches.
-      .col-xs-12.col-sm-6.col-md-3
-        %b.red You need
-        %span.black your own laptop, curiosity and a sprinkle of imagination!
-      .col-xs-12.col-sm-6.col-md-3
-        %b.red Want to participate?
-        %span.black Keep an eye on our social media accounts for news about our next events.
-      .col-xs-12.col-sm-6.col-md-3
-        %b.red
-          = link_to 'Summer of Code', 'http://railsgirlssummerofcode.org'
-        %span.black Get paid to contribute to Open Source for 3-months!
-    %br
-    %br
-    .row
-      .text-center
-        Follow
-        %b.red
-          = link_to '@RailsGirls_BE', 'http://twitter.com/RailsGirls_BE'
-        %span on Twitter or like our
-        %b.red
-          = link_to 'Facebook page', 'https://www.facebook.com/RailsGirlsBrussels'
-        %span for updates.
+= partial :overview
 
-%section
-  .container
-    .text-center
-      %h2.section-heading.marginless HTML and Rails coaching for women
-      %h3.section-subheading.text-muted Rails Girls - Get started with tech
-    .row
-      .col-md-6
-        %img.imgsize2{src: '/assets/images/rails-girls/railsgirls3.jpg'}
-      .col-md-6.imgsize2
-        %img.imgsize2{src: '/assets/images/rails-girls/railsgirls2.jpg'}
+= partial :images
 
-= partial :coaching
+= partial :coaches
 
-:javascript
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-
-
-.fb-root
-  :javascript
-    (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=603249739823141";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+= partial :js
