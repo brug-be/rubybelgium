@@ -26,6 +26,10 @@ helpers do
   end
 end
 
+# Sitemap implementation
+set :url_root, 'rubybelgium.be'
+activate :search_engine_sitemap
+
 set :relative_links, true
 
 set :css_dir,    'assets/stylesheets'
