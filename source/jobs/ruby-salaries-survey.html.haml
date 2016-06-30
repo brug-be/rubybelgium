@@ -6,17 +6,28 @@ title: Ruby salaries survey - Ruby Belgium
   .layer
     .container.text-center
       %h1.animated.fadeInUp Ruby Belgium salaries survey
-      %h3.header__subtitle
+      %h3.header__subtitle Help beginners know their market value and senior to grow
+      %p
+        %small.text-muted Help us get more data! We will treat your information confidentially
+      %p
+        %a.btn.btn-primary.btn-lg{href: "http://goo.gl/forms/Tmcl3Y9SljnqNpHh2"}
+          Add your salary
+
+%section.bg-light-gray
+  .container
+    .text-center
+      %h2.section-heading.marginless Average gross salary
+      %h4.header__subtitle
         Here’s how the average gross salary changes as more experience is gained
       #chart1
-%section.bg-light-gray
+%section
   .container
     .text-center
       %h2.section-heading.marginless Service or product company
       %h4.header__subtitle
         The average salarie per type of company
       #chart2
-%section
+%section.bg-light-gray
   .container
     .text-center
       %h2.section-heading.marginless Average Salaries by Cities
@@ -28,7 +39,11 @@ title: Ruby salaries survey - Ruby Belgium
         %span.highest
         €
       #chart3
-
+%section
+  .container
+    .text-center
+      %p Help us get more data! We will treat your information confidentially
+      %a.btn.btn-primary.btn-lg{href: "http://goo.gl/forms/Tmcl3Y9SljnqNpHh2"} Add your salary
 %script{src: "https://www.gstatic.com/charts/loader.js"}
 %script{src: "https://www.google.com/jsapi"}
 = javascript_include_tag  "salaries_graphs"
