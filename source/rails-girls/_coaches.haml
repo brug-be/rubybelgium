@@ -1,7 +1,7 @@
-%section.bg-light-gray
+%section
   .container
     .text-center
-      %h2.section-heading Our Coaches
+      %h2.section-heading Our awesome coaches
       .row
         - data.coaches.each do |coach|
           .col-xs-6.col-md-3.portfolio-item
@@ -10,3 +10,7 @@
                 %b= coach.name
                 .black
                   @#{coach.twitter}
+
+    .text-center.spaced
+      %h3 If you have any questions, join our chat, we don't bite!
+      %a.spaced.btn.btn-primary.btn-lg{href: "https://rubyburgers.herokuapp.com/"} Get an invite here
