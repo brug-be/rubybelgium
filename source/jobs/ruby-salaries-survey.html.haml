@@ -1,0 +1,63 @@
+---
+title: Ruby salaries survey - Ruby Belgium
+---
+
+%header.header
+  .layer
+    .container.text-center
+      %h1.animated.fadeInUp Ruby Belgium salaries survey
+      %h3.header__subtitle Help beginners know their market value and seniors to grow
+      %p
+        %small.text-muted Help us get more data! We will treat your information confidentially
+      %p
+        %a.btn.btn-primary.btn-lg{href: "http://goo.gl/forms/Tmcl3Y9SljnqNpHh2"}
+          Add your salary
+
+%section.bg-light-gray
+  .container
+    .text-center
+      %h2.section-heading.marginless Average gross salary
+      %h4.header__subtitle
+        Here’s how the average gross salary changes as more experience is gained
+      #chart1
+%section
+  .container
+    .text-center
+      %h2.section-heading.marginless Service or product company
+      %h4.header__subtitle
+        The average salarie per type of company
+      #chart2
+%section.bg-light-gray
+  .container
+    .text-center
+      %h2.section-heading.marginless Average Salaries by Cities
+      %h4.header__subtitle
+        The average gross salaries from
+        %span.total
+        developpers
+        in main Belgian cities, with the highest average being
+        %span.highest
+        €
+      #chart3
+%section
+  .container
+    .text-center
+      %h2.section-heading.marginless Extras
+      %h4.header__subtitle There is a range of extras that Belgian developpers receive on top of their salaries; a common practice in Belgium. Such as:
+      %ul.list-reset
+        %li Meal-cheques
+        %li 13th month salary
+        %li Mobile subscription
+        %li Health insurance
+        %li Eco-cheques
+        %li Company car
+        %li Internet subscription
+        %li Extra vacation
+%section
+  .container
+    .text-center
+      %p Help us get more data! We will treat your information confidentially
+      %a.btn.btn-primary.btn-lg{href: "http://goo.gl/forms/Tmcl3Y9SljnqNpHh2"} Add your salary
+%script{src: "https://www.gstatic.com/charts/loader.js"}
+%script{src: "https://www.google.com/jsapi"}
+= javascript_include_tag  "salaries_graphs"
