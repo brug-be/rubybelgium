@@ -1,5 +1,7 @@
-google.charts.load('upcoming', { 'packages': ['corechart', 'geochart', 'table'], 'language': 'fr' });
-google.charts.setOnLoadCallback(drawCharts);
+google.load('maps', '3.10', { other_params : 'libraries=geocoder&key=AIzaSyCLsNBr4v8uDlRet0DF-nRa56oFfx35evs', callback: function() {
+  google.charts.load('upcoming', { 'packages': ['corechart', 'geochart', 'table'], 'language': 'fr' });
+  google.charts.setOnLoadCallback(drawCharts);
+}});
 
 function drawCharts () {
   var url = 'https://docs.google.com/spreadsheets/d/1HbTDI9uV49zp0Bh1Aei1AP8HtuTnTg9x-ubC0LdZu3g/edit#gid=640667913';
