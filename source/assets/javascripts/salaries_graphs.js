@@ -1,4 +1,4 @@
-google.charts.load('current', { 'packages': ['corechart', 'geochart', 'table'], 'language': 'fr' });
+google.charts.load('upcoming', { 'packages': ['corechart', 'geochart', 'table'], 'language': 'fr' });
 google.charts.setOnLoadCallback(drawCharts);
 
 function drawCharts () {

@@ -2,6 +2,12 @@
 title: Ruby salaries survey - Ruby Belgium
 ---
 
+= content_for :head_scripts do
+  %script{src: "https://www.gstatic.com/charts/loader.js"}
+  %script{src: "https://www.google.com/jsapi"}
+  = javascript_include_tag  "salaries_graphs"
+
+
 %header.header
   .layer
     .container.text-center
@@ -58,7 +64,3 @@ title: Ruby salaries survey - Ruby Belgium
     .text-center
       %p Help us get more data! We will treat your information confidentially
       %a.btn.btn-primary.btn-lg{href: "http://goo.gl/forms/Tmcl3Y9SljnqNpHh2"} Add your salary
-%script{src: "https://www.gstatic.com/charts/loader.js"}
-%script{src: "https://www.google.com/jsapi"}
-%script{src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBOmERV2C7zNuCtm4pSSoMfkGE8Rf-3wNM"}
-= javascript_include_tag  "salaries_graphs"
