@@ -5,33 +5,28 @@
         = image_tag '/assets/images/rails-girls/railsgirls-logo.png', class: 'align-vertical'
 
   .container
-    .text-columns Our aim is to give tools and a community for women to understand technology and to build their ideas. We do this by providing a great experience on building things and by making technology more approachable. Learn sketching, prototyping, basic programming and get introduced to the world of technology. Rails Girls was born in Finland, but is nowadays a global, non-profit volunteer community.
+    .text-columns
+      Rails Girls was born in Finland, but is now a global, non-profit volunteer community.
+      Our goal is to give girls and women enough tools to understand technology and a supportive community to help them build their ideas.
+      We do this by organizing a 1 evening + 1 day ruby bootcamp with online training materials and coaches to help them along the way.
 
-    %p.extraline
-
-    .row
-      .col-xs-12.col-sm-6.col-md-3
-        %b.red You learn
-        %span.black designing, prototyping and coding with help from our coaches.
-      .col-xs-12.col-sm-6.col-md-3
-        %b.red You need
-        %span.black your own laptop, curiosity and a sprinkle of imagination!
-      .col-xs-12.col-sm-6.col-md-3
-        %b.red Want to participate?
-        %span.black Keep an eye on our social media accounts for news about our next events.
-      .col-xs-12.col-sm-6.col-md-3
-        %b.red
-          = link_to 'Summer of Code', 'http://railsgirlssummerofcode.org'
-        %span.black Get paid to contribute to Open Source for 3-months!
-
-    %p.extraline
-
-    .row
-      .text-center
-        Follow
-        %b.red
-          = link_to '@RailsGirls_BE', 'http://twitter.com/RailsGirls_BE'
-        %span on Twitter or like our
-        %b.red
-          = link_to 'Facebook page', 'https://www.facebook.com/RailsGirlsBrussels'
-        %span for updates.
+%section
+  .container
+    .text-center
+      %h2.section-heading.marginless Getting started with tech, like a breeze
+      %h3.section-subheading.text-muted You're in good hands, all our coaches from the community are there to help you!
+    .spaced.text-center
+      %p
+        %strong You will learn
+        designing, prototyping and coding with help from our coaches.
+      %p
+        %strong You only need
+        your own laptop, curiosity and a sprinkle of imagination!
+    .text-center
+      %h3 You want to participate?
+      %p.text-muted
+        Get notified for next event by following us
+        %strong= link_to '@RailsGirls_BE', 'http://twitter.com/RailsGirls_BE'
+        on Twitter or like our
+        %strong= link_to 'Facebook', 'https://www.facebook.com/RailsGirlsBrussels'
+        page
