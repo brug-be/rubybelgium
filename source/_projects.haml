@@ -5,7 +5,7 @@
         %h2.section-heading Our Projects
     .row
       - data.projects.each do |project|
-        .col-xs-6.col-md-3.portfolio-item
+        .col-xs-12.col-md-3.portfolio-item
           = link_to project.link, class: 'portfolio-link', rel: 'nofollow' do
             .portfolio-hover
               .portfolio-hover-content
