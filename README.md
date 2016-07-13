@@ -16,9 +16,11 @@ The site is based on [Middleman](https://middlemanapp.com) and the [Agency](http
 
 To deploy the master branch on Github pages:
 
+Make sure you have the `mgd` gem installed [docs](https://github.com/hovancik/middleman-github-deploy) and pushed all changes to github.
+
 ```shell
 git checkout master
-middleman deploy --build-before
+mgd
 ```
 
 It will build the static site, create a commit on the _gh-pages_ branch, and push it online. Github pages automatically takes care of the rest.

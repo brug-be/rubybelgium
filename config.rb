@@ -47,16 +47,8 @@ configure :build do
   activate :minify_html
   activate :gzip
   activate :asset_hash
-
-  require_relative "./lib/build_cleaner"
-  activate :build_cleaner
 end
 
 configure :development do
   activate :livereload
 end
-
-# middleman-deploy
-# activate :deploy do |deploy|
-#   deploy.method = :git
-# end
