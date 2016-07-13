@@ -52,11 +52,6 @@ configure :build do
   activate :build_cleaner
 end
 
-# activate :google_analytics do |ga|
-#   ga.tracking_id = 'UA-76403519-1'
-#   ga.development = false
-# end
-
 configure :development do
   activate :livereload
 end

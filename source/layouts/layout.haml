@@ -23,4 +23,6 @@
   %body.animated.fadeIn{class: page_classes}
     = partial :navigation
     = yield
-    -# = google_analytics_universal_tag
+
+    - unless app.development?
+      = partial :ga
