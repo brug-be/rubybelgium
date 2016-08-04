@@ -18,8 +18,17 @@ title: Brug - Ruby Belgium User Group - Ruby Belgium
       %p That's why, every third Tuesday of the month, the Ruby community is gathering in a co-working space.
       %p The objectives are diverse: meet everybody, have a chat about common interests, listen to tech talks, or getting help with projects.
       %p There are always beginners and seasoned developers attending, so don't be afraid to join the party, and ask for advices.
-
 %section
+  .container
+    .text-center
+      %h2.section-heading Organizer
+      = image_tag 'tiago.jpg', class: "img-responsive img-circle center-block", alt: 'Tiago Mendes-Costa'
+      %h3.section-subheading.text-muted Tiago Mendes-Costa
+      %ul.list-inline.social-buttons
+        %li
+          = link_to "https://twitter.com/otagi" do
+            %i.fa.fa-twitter
+%section.bg-light-gray
   .container
     .text-center
       %h2.section-heading.marginless A place to share and learn with others
@@ -31,19 +40,5 @@ title: Brug - Ruby Belgium User Group - Ruby Belgium
       .col-md-6
         %img.thumbnail{src: '/assets/images/brug/brug-2.jpg'}
         %p.text-center A talk about idiomatic ruby
-%section.text-center.section--alternate
+%section.text-center
   = link_to 'Join us for the next event', 'https://www.meetup.com/ruby_belgium/', class: 'btn btn-primary btn-lg'
-
-%section
-  .container
-    .row
-      .col-lg-12.text-center
-        %h2.section-heading Organizer
-        = image_tag 'tiago.jpg', class: "img-responsive img-circle center-block", alt: 'Tiago Mendes-Costa'
-        %h3.section-subheading.text-muted Tiago Mendes-Costa
-        %ul.list-inline.social-buttons
-          %li
-            = link_to "https://twitter.com/otagi" do
-              %i.fa.fa-twitter
-
-
