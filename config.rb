@@ -28,10 +28,15 @@ end
 
 # Sitemap implementation
 set :url_root, 'rubybelgium.be'
+
 activate :search_engine_sitemap
+activate :directory_indexes
+
+activate :sprockets do |c|
+  c.expose_middleman_helpers = true
+end
 
 set :relative_links, true
-
 set :css_dir,    'assets/stylesheets'
 set :images_dir, 'assets/images'
 set :js_dir,     'assets/javascripts'
@@ -41,23 +46,9 @@ configure :build do
   activate :minify_javascript
   activate :minify_html
   activate :gzip
-  activate :imageoptim
   activate :asset_hash
-
-  require_relative "./lib/build_cleaner"
-  activate :build_cleaner
-end
-
-activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-76403519-1'
-  ga.development = false
 end
 
 configure :development do
   activate :livereload
-end
-
-# middleman-deploy
-activate :deploy do |deploy|
-  deploy.method = :git
 end

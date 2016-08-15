@@ -9,7 +9,7 @@
 
     %title= current_page.data.title || "Ruby Belgium"
     %meta{name: "description", content: current_page.data.description || "The belgian community group promoting ruby usage and ruby jobs market"}/
-
+    = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Raleway:300,400' 
     = stylesheet_link_tag "all"
 
     = javascript_include_tag  "all", defer: true
@@ -23,4 +23,6 @@
   %body.animated.fadeIn{class: page_classes}
     = partial :navigation
     = yield
-    = google_analytics_universal_tag
+
+    - unless app.development?
+      = partial :ga
