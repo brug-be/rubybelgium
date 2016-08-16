@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>rubybelgium.be/jobs/ruby-salaries-survey/</loc>
-    <lastmod>2016-08-15T19:29:26+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>rubybelgium.be/rails-girls/</loc>
-    <lastmod>2016-08-15T19:29:26+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>rubybelgium.be/ruby-belgium-user-group/</loc>
-    <lastmod>2016-08-15T19:29:26+02:00</lastmod>
+    <lastmod>2016-08-16T23:30:26+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>rubybelgium.be/about/</loc>
+    <lastmod>2016-08-16T23:30:26+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>rubybelgium.be/rubyshops/</loc>
-    <lastmod>2016-08-15T19:29:26+02:00</lastmod>
+    <lastmod>2016-08-16T23:30:26+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>rubybelgium.be/rails-girls/</loc>
+    <lastmod>2016-08-16T23:30:26+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>rubybelgium.be/</loc>
-    <lastmod>2016-08-15T19:29:26+02:00</lastmod>
+    <lastmod>2016-08-16T23:30:26+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>rubybelgium.be/jobs/ruby-salaries-survey/</loc>
+    <lastmod>2016-08-16T23:30:26+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

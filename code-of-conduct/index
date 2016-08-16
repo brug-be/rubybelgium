@@ -5,7 +5,7 @@
     </div>
   </div>
 </header>
-<section class='bg-light-gray'>
+<section class='section--alternate'>
   <div class='container'>
     <div class='text-columns'>
       <p>Ruby Belgium is dedicated to providing a harassment-free environment experience for everyone, regardless of gender, sexual orientation, ability, ethnicity, socio-economic status and religion (or lack thereof). We want to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible.</p>
@@ -37,7 +37,7 @@
     </div>
   </div>
 </section>
-<section class='bg-light-gray'>
+<section class='section--alternate'>
   <div class='container'>
     <div class='text-center'>
       <h2 class='section-heading'>As activity staff or volunteer</h2>
