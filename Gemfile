@@ -20,4 +20,3 @@ gem 'font-awesome-sass', '~> 4.4.0', require: false
 
 gem 'middleman-minify-html'
 gem 'middleman-search_engine_sitemap'
-gem 'mgd'
