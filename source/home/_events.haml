@@ -7,15 +7,14 @@
       .col-lg-12
         %ul.timeline#events-list
           %li
-            = link_to 'rails-girls' do
+            = link_to 'http://railsgirls.com/brussels' do
               .timeline-image
                 = image_tag 'railsgirls-sq.png', class: 'img-circle img-responsive', alt: '28-29/10/2016'
             .timeline-panel
               .timeline-heading
                 %h4 28-29/10/2016
                 %h4.subheading
-                  %a{href: 'rails-girls'}
-                    Rails Girls Brussels
+                  = link_to 'Rails Girls Brussels', 'http://railsgirls.com/brussels'
               .timeline-body
                 %p.text-muted Get started with tech
           %li.more
