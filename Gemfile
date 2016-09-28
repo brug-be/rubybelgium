@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 
 gem 'middleman', '>= 4.0.0'
 
+# Deployment
+gem 'mgd'
+
 # Live-reloading plugin
 gem 'middleman-livereload', '>= 3.1.0'
 gem 'middleman-sprockets'
