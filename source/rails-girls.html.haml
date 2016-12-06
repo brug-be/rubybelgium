@@ -5,10 +5,13 @@ title: Rails Girls Brussels - Ruby Belgium
 %header.header
   .layer
     .container.text-center
+      = link_to 'http://www.railsgirls.com' do
+        = image_tag '/assets/images/rails-girls/railsgirls-logo.png', class: 'align-vertical rglogo', alt: 'Rails Girls Brussels'
       %h1.animated.fadeInUp Rails Girls Brussels
       %h3.header__subtitle
         %p The basics of programming, for girls, in a day!
-
+      %a.page-scroll.btn.btn-primary.btn-lg{href: "http://railsgirls.com/brussels", rel: 'nofollow'}
+        Get info about the next events
 = partial 'rails-girls/overview'
 = partial 'rails-girls/images'
 = partial 'rails-girls/coaches'
