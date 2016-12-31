@@ -1,35 +1,36 @@
 section {
-	padding: 100px 0;
+  padding: 100px 0;
   @include skew_bar();
-	.section-heading {
-		font-size: 40px;
-		margin-top: 0;
-		margin-bottom: 75px;
-	}
+  h2, .section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 75px;
+    text-align: center;
+  }
 }
 
 .section-subheading {
-	font-size: 16px;
-	text-transform: none;
-	font-style: italic;
-	font-weight: 400;
-	margin-bottom: 75px;
+  font-size: 16px;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
 }
 
 @media(min-width:768px) {
-	section {
-		padding: 150px 0;
-	}
+  section {
+    padding: 150px 0;
+  }
 }
 
 // Services Section
 
 .service-heading {
-	margin: 15px 0;
-	text-transform: none;
+  margin: 15px 0;
+  text-transform: none;
 }
 
-.section--alternate {
+section.alternate, .section--alternate {
   background-color: $gray-lighter;
   @include skew_bar($gray-lighter);
 }
