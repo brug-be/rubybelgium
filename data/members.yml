@@ -1,25 +1,42 @@
 -
-  name: Christophe Philemotte
+  name: Stan Boyet
   description: President
-  image: toch.jpeg
+  image: stan.jpg
   twitter: _toch
+  quote: "I write ruby code and technical debt (aka javascript)"
 -
-  name: Joren De Groof
-  description: Treasurer
-  image: joren.jpeg
-  twitter: joren
+  name: Martin Van Aken
+  description: Vice President
+  image: martin.jpg
+  twitter: lienvdsteen
+  quote: "Pointy-end, half-full stackoverflow developer, designated Scrumbag"
 -
   name: Silvana Precup
   description: Secretary
   image: silvana.jpg
   twitter: silvanaprecup
+  quote: "I write ruby code and technical debt (aka javascript)"
 -
-  name: Boris Rorsvort
+  name: Laszlo Arnould
+  description: Treasurer
+  image: laszlo.jpg
+  twitter: joren
+  quote: "There are only 10 types of people"
+-
+  name: Thiago Mendes-Costa
   description: Board Member
-  image: boris.jpeg
+  image: tiago.jpg
   twitter: borisrorsvort
+  quote: "Ruby writer"
 -
-  name: Lien Van Den Steen
+  name: Ana Sere
   description: Board Member
-  image: lien.jpg
+  image: ana.jpg
   twitter: lienvdsteen
+  quote: "Rake it 'til you make it !"
+-
+  name: Sandjiv Parassouramanaick
+  description: Board Member
+  image: sandjiv.jpg
+  twitter: lienvdsteen
+  quote: "If everything is !important, nothing is"
