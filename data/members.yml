@@ -1,25 +1,42 @@
 -
-  name: Christophe Philemotte
+  name: Stan Boyet
   description: President
-  image: toch.jpeg
-  twitter: _toch
+  image: stan.jpg
+  twitter: StanBoyet
+  quote: "I write ruby code and technical debt (aka javascript)"
 -
-  name: Joren De Groof
-  description: Treasurer
-  image: joren.jpeg
-  twitter: joren
+  name: Martin Van Aken
+  description: Vice President
+  image: martin.jpg
+  twitter: martinvanaken
+  quote: "Pointy-end, half-full stackoverflow developer, designated Scrumbag"
 -
   name: Silvana Precup
   description: Secretary
   image: silvana.jpg
   twitter: silvanaprecup
+  quote: "A feminist into cyber security, who’s first crush was Ruby"
 -
-  name: Boris Rorsvort
-  description: Board Member
-  image: boris.jpeg
-  twitter: borisrorsvort
+  name: Laszlo Arnould
+  description: Treasurer
+  image: laszlo.jpg
+  twitter: rubybelgium
+  quote: "#000 is the new black"
 -
-  name: Lien Van Den Steen
+  name: Tiago Mendes-Costa
   description: Board Member
-  image: lien.jpg
-  twitter: lienvdsteen
+  image: tiago.jpg
+  twitter: otagi
+  quote: "Ruby bug writer"
+-
+  name: Ana Sere
+  description: Board Member
+  image: ana.jpg
+  twitter: rubybelgium
+  quote: "Rake it 'til you make it !"
+-
+  name: Sandjiv Parassouramanaick
+  description: Board Member
+  image: sandjiv.jpg
+  twitter: Yaunmec
+  quote: "If everything is !important, nothing is"
