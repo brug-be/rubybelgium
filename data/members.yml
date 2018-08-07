@@ -6,22 +6,22 @@
   quote: "I write ruby code and technical debt (aka javascript)"
 -
   name: Martin Van Aken
-  description: Vice President
+  description: Secretary
   image: martin.jpg
   twitter: martinvanaken
   quote: "Pointy-end, half-full stackoverflow developer, designated Scrumbag"
--
-  name: Silvana Precup
-  description: Secretary
-  image: silvana.jpg
-  twitter: silvanaprecup
-  quote: "A feminist into cyber security, who’s first crush was Ruby"
 -
   name: Laszlo Arnould
   description: Treasurer
   image: laszlo.jpg
   twitter: rubybelgium
   quote: "#000 is the new black"
+-
+  name: Silvana Precup
+  description: Board Member
+  image: silvana.jpg
+  twitter: silvanaprecup
+  quote: "A feminist into cyber security, who’s first crush was Ruby"
 -
   name: Tiago Mendes-Costa
   description: Board Member
