@@ -1,7 +1,125 @@
-.rglogo {
-  background: $brand-primary;
-  padding: 10px;
-  margin-bottom: 3em;
-  width: 200px;
-  margin: 0 auto;
+body.rails-girls {
+  a:not(.btn):hover {
+    color: $brand-primary;
+  }
+
+  > header {
+    color: $brand-primary;
+    margin-top: 50px;
+    padding: 100px 0 50px 0;
+    text-align: center;
+    @include skew_bar(#fff);
+
+    > * {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    p {
+      font-size: 28px;
+      font-weight: 100;
+      line-height: 1.5;
+      margin-top: 24px;
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  > section:not(#contact) {
+    padding: 100px 0 50px 0;
+
+    &:nth-of-type(odd) {
+      background-color: $gray-lighter;
+      @include skew_bar($gray-lighter);
+    }
+
+    > * {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    > h2, > p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 65rem;
+    }
+
+    > h2 {
+      text-align: center;
+      margin-bottom: 6rem;
+    }
+
+    > p {
+      font-size: 20px;
+      text-align: left;
+
+      &.cta {
+        margin-top: 6rem;
+        text-align: center;
+
+        .btn {
+          white-space: normal;
+        }
+      }
+    }
+  }
+
+  > section.organizers {
+    text-align: center;
+
+    p {
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    figure {
+      display: inline-block;
+
+      img {
+        border: solid 2px $gray-lighter;
+        border-radius: 50%;
+        width: 200px;
+
+        &:hover {
+          border-color: $brand-primary;
+        }
+      }
+    }
+
+    section.team {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 65rem;
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+
+      &:after {
+        content: none;
+      }
+
+      p {
+        flex: 1 0 100%;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        text-align: center;
+      }
+
+      figure {
+        flex: 0 1 auto;
+
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
 }

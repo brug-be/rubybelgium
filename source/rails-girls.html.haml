@@ -2,18 +2,33 @@
 title: Rails Girls Brussels - Ruby Belgium
 ---
 
-%header.header
-  .layer
-    .container.text-center
-      = link_to 'http://www.railsgirls.com' do
-        = image_tag '/assets/images/rails-girls/railsgirls-logo.png', class: 'align-vertical rglogo', alt: 'Rails Girls Brussels'
-      %h1.animated.fadeInUp Rails Girls Brussels
-      %h3.header__subtitle
-        %p The basics of programming, for girls, in a day!
-      %a.page-scroll.btn.btn-primary.btn-lg{href: "http://railsgirls.com/brussels", rel: 'nofollow'}
-        Learn more
-      %a.page-scroll.btn.btn-default.btn-lg{href: "#get_involved"}
-        Get involved
-= partial 'rails-girls/overview'
-= partial 'rails-girls/images'
-= partial 'rails-girls/coaches'
+%header
+  %h1 Rails Girls Brussels
+  %p 12–13 October 2018
+  %p Learn the basics of web development in 1 day.
+
+%section.call-for-coaches
+  %h2 Call for Coaches
+  %p HTML, CSS, Ruby, and Rails developers: we need your help!
+  %p Join us on the 12th and/or the 13th of October to introduce beginners to the wonders of web layout and code.
+  %p You don’t need to be an expert. If you can explain to someone how to generate a Rails app, and add a few basic pages, you’re good!
+  %p On Friday evening from 18h to 21h, we’ll help students get their laptop ready for the next day, installing Ruby and the Rails gem. Saturday will be dedicated to HTML, CSS, and Rails, from 9h to 17h.
+  %p Both days will be held at #{link_to 'BeCentral', 'https://www.becentral.org'}.
+  %p.cta
+    %a.btn.btn-primary.btn-lg{href: "https://otagi.typeform.com/to/COvAMv"}
+      Fill in the short registration form
+
+%section.organizers
+  %h2 Organizers
+  - data.members.select{|m| m.name == "Silvana Precup"}.each do |member|
+    %figure
+      = link_to "https://twitter.com/#{member.twitter}" do
+        = image_tag member.image, alt: member.name
+        %figcaption= member.name.split.first
+  %section.team
+    %p And the Ruby Belgium team
+    - data.members.reject{|m| m.name == "Silvana Precup"}.sort_by{|m| m.name}.each do |member|
+      %figure
+        = link_to "https://twitter.com/#{member.twitter}" do
+          = image_tag member.image, alt: member.name
+          %figcaption= member.name.split.first
