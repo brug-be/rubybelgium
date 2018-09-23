@@ -6,14 +6,30 @@ title: Rails Girls Brussels - Ruby Belgium
   %h1 Rails Girls Brussels
   %p 12–13 October 2018
   %p Learn the basics of web development in 1 day.
+  %nav.toc
+    %ul
+      %li= link_to 'Apply', '#students-application'
+      %li= link_to 'Coaches', '#call-for-coaches'
+      %li= link_to 'Organizers', '#organizers'
+      %li= link_to 'Contact', '#contact'
 
-%section.students-application
-  %h2 Students Application
+%section#intro
+  %h2 What is it?
+  %p #{link_to 'Rails Girls', 'http://railsgirls.com'} is a worldwide movement to introduce women to web development, and promote gender diversity in <abbr title="Science, Technology, Engineering, and Mathematics">STEM</abbr> fields.
+  %p During one Saturday, students in groups of 2 to 3 are guided step by step by a coach to create their first <abbr title="HyperText Markup Language">HTML</abbr> page, and a simple #{link_to 'Ruby on Rails', 'https://rubyonrails.org'} app.
+  %p Participants are also invited to come by on Friday evening to install the required bits on their laptop, and to meet & greet the other students and coaches.
+  %p The workshop is run by volunteers, and completely free to attend. It is open to women of all age and origin, provided they can come with a laptop.
+  %p We take special care to create a safe, welcoming, and enjoyable environment for the students. Everyone, including the organizers and coaches, are expected to strictly adhere to the #{link_to 'Code of Conduct', '/code-of-conduct'}.
+
+%section#students-application
+  %h2 Apply for the workshop
+  %p We just need your name, email, and a bit of information about your level of experience, to help us form balanced teams during the workshop. It will not influence if you are accepted or not.
+  %p The event will be held at #{link_to 'BeCentral', 'https://www.becentral.org'} on Friday 12 (18–21h) and Saturday 13 October 2018 (9–17h).
   %p.cta
     %a.btn.btn-primary.btn-lg{href: "https://silvi34.typeform.com/to/sOJZyB"}
       Fill in the application form
 
-%section.call-for-coaches
+%section#call-for-coaches
   %h2 Call for Coaches
   %p HTML, CSS, Ruby, and Rails developers: we need your help!
   %p Join us on the 12th and/or the 13th of October to introduce beginners to the wonders of web layout and code.
@@ -24,7 +40,7 @@ title: Rails Girls Brussels - Ruby Belgium
     %a.btn.btn-primary.btn-lg{href: "https://otagi.typeform.com/to/COvAMv"}
       Fill in the short registration form
 
-%section.organizers
+%section#organizers
   %h2 Organizers
   - data.members.select{|m| m.name == "Silvana Precup"}.each do |member|
     %figure

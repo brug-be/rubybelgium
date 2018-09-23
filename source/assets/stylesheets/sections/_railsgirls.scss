@@ -26,6 +26,31 @@ body.rails-girls {
         margin-bottom: 0;
       }
     }
+
+    nav {
+      ul {
+        display: flex;
+        flex-flow: column;
+        font-size: 20px;
+        justify-content: center;
+        list-style: none;
+        margin: 6rem 0 0 0;
+        padding: 0;
+      }
+
+      @media(min-width:480px) {
+        ul {
+          flex-flow: row wrap;
+
+          li + li {
+            &:before {
+              margin: 0 1rem;
+              content: '•';
+            }
+          }
+        }
+      }
+    }
   }
 
   > section:not(#contact) {
@@ -67,7 +92,7 @@ body.rails-girls {
     }
   }
 
-  > section.organizers {
+  > section#organizers {
     text-align: center;
 
     p {
