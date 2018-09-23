@@ -11,7 +11,7 @@ gem 'mgd'
 gem 'middleman-livereload', '>= 3.1.0'
 gem 'middleman-sprockets'
 
-gem 'json', github: 'flori/json', branch: 'v1.8'
+gem 'json', git: 'https://github.com/flori/json', branch: 'v1.8'
 
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
