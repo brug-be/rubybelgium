@@ -62,14 +62,11 @@ body.rails-girls {
     }
 
     > * {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-
-    > h2, > p {
       margin-left: auto;
       margin-right: auto;
       max-width: 65rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
 
     > h2 {
@@ -77,7 +74,7 @@ body.rails-girls {
       margin-bottom: 6rem;
     }
 
-    > p {
+    > p, > dl {
       font-size: 20px;
       text-align: left;
 
@@ -89,6 +86,12 @@ body.rails-girls {
           white-space: normal;
         }
       }
+    }
+
+    > dl {
+      display: grid;
+      grid-gap: 1rem 2rem;
+      grid-template-columns: 5rem auto;
     }
   }
 

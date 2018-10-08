@@ -40,6 +40,31 @@ title: Rails Girls Brussels - Ruby Belgium
     %a.btn.btn-primary.btn-lg{href: "https://otagi.typeform.com/to/COvAMv"}
       Fill in the short registration form
 
+%section#program
+  %h2 Program
+  %h3 Friday
+  %dl
+    %dt 18h
+    %dd The staff will help students to install the software needed for the workshop on their laptop. (#{link_to 'install guide', 'https://guides.railsgirls.com/install'})
+    %dt 21h
+    %dd Wrap-up.
+  %h3 Saturday
+  %dl
+    %dt 9h
+    %dd Breakfast and welcome words.
+    %dt 9h30
+    %dd We’ll form the students & coaches groups, and perform the last-minute software installs.
+    %dt 10h
+    %dd First part of the workshop — HTML and CSS. (#{link_to 'part 1 guide', 'http://brug-be.github.io/railsgirls_guide/part_1/'})
+    %dt 12h
+    %dd Lunch, and a few words from coding schools & associations.
+    %dt 13h
+    %dd Second part of the workshop — Ruby on Rails (#{link_to 'part 2 guide', 'http://brug-be.github.io/railsgirls_guide/part_2/'})
+    %dt 16h30
+    %dd Wrap-up, and what to do next, for the ones who want to go further.
+    %dt 17h
+    %dd After-work(shop) drink.
+
 %section#organizers
   %h2 Organizers
   - data.members.select{|m| m.name == "Silvana Precup"}.each do |member|
