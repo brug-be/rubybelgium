@@ -29,6 +29,8 @@
     = yield
     = partial :contact
     = partial :footer
+    = partial :gad_setup
 
     - unless app.development?
       = partial :ga
+      = partial :gad_setup
