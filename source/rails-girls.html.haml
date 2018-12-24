@@ -69,9 +69,13 @@ title: Rails Girls Brussels - Ruby Belgium
 %section#organizers
   %h2 Organizers
   %figure
-    = link_to "https://twitter.com/rubybelgium" do
+    = link_to "https://twitter.com/Ana_Daks" do
       = image_tag 'ana.jpg', alt: 'Ana Sere'
       %figcaption Ana
+  %figure
+    = link_to "https://twitter.com/ClemDelisse" do
+      = image_tag 'clem.jpg', alt: 'Clémentine Delisse'
+      %figcaption Clémentine
   %section.team
     %p And the Ruby Belgium team
     - data.members.reject{|m| m.name == "Ana Sere"}.sort_by{|m| m.name}.each do |member|
