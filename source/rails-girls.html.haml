@@ -2,16 +2,84 @@
 title: Rails Girls Brussels - Ruby Belgium
 ---
 
-%header.header
-  .layer
-    .container.text-center
-      = link_to 'http://www.railsgirls.com' do
-        = image_tag '/assets/images/rails-girls/railsgirls-logo.png', class: 'align-vertical rglogo', alt: 'Rails Girls Brussels'
-      %h1.animated.fadeInUp Rails Girls Brussels
-      %h3.header__subtitle
-        %p The basics of programming, for girls, in a day!
-      %a.page-scroll.btn.btn-primary.btn-lg{href: "http://railsgirls.com/brussels", rel: 'nofollow'}
-        Get info about the next events
-= partial 'rails-girls/overview'
-= partial 'rails-girls/images'
-= partial 'rails-girls/coaches'
+%header
+  %h1 Rails Girls Brussels
+  %p 11–12 January 2019
+  %p Learn the basics of web development in 1 day.
+  %nav.toc
+    %ul
+      %li= link_to 'Apply', '#students-application'
+      %li= link_to 'Coaches', '#call-for-coaches'
+      %li= link_to 'Program', '#program'
+      %li= link_to 'Organizers', '#organizers'
+      %li= link_to 'Contact', '#contact'
+
+%section#intro
+  %h2 What is it?
+  %p #{link_to 'Rails Girls', 'http://railsgirls.com'} is a worldwide movement to introduce women to web development, and promote gender diversity in <abbr title="Science, Technology, Engineering, and Mathematics">STEM</abbr> fields.
+  %p During one Saturday, students in groups of 2 to 3 are guided step by step by a coach to create their first <abbr title="HyperText Markup Language">HTML</abbr> page, and a simple #{link_to 'Ruby on Rails', 'https://rubyonrails.org'} app.
+  %p Participants are also invited to come by on Friday evening to install the required bits on their laptop, and to meet & greet the other students and coaches.
+  %p The workshop is run by volunteers, and completely free to attend. It is open to women of all age and origin, provided they can come with a laptop.
+  %p We take special care to create a safe, welcoming, and enjoyable environment for the students. Everyone, including the organizers and coaches, are expected to strictly adhere to the #{link_to 'Code of Conduct', '/code-of-conduct'}.
+
+%section#students-application
+  %h2 Apply for the workshop
+  %p We just need your name, email, and a bit of information about your level of experience, to help us form balanced teams during the workshop. It will not influence if you are accepted or not.
+  %p The event will be held at #{link_to 'BeCentral', 'https://www.becentral.org'} on Friday 11 (18–21h) and Saturday 12 January 2019 (9–17h).
+  %p.cta
+    %span.btn.btn-outline-primary.btn-lg.disabled
+      The application process is now closed
+
+%section#call-for-coaches
+  %h2 Call for Coaches
+  %p HTML, CSS, Ruby, and Rails developers: we need your help!
+  %p Join us on the 11th and/or the 12th of January to introduce beginners to the wonders of web layout and code.
+  %p You don’t need to be an expert. If you can explain to someone how to generate a Rails app, and add a few basic pages, you’re good!
+  %p On Friday evening from 18h to 21h, we’ll help students get their laptop ready for the next day, installing Ruby and the Rails gem. Saturday will be dedicated to HTML, CSS, and Rails, from 9h to 17h.
+  %p Both days will be held at #{link_to 'BeCentral', 'https://www.becentral.org'}.
+  %p.cta
+    %a.btn.btn-primary.btn-lg{href: "https://otagi.typeform.com/to/hoiH3C"}
+      Fill in the short registration form
+
+%section#program
+  %h2 Program
+  %h3 Friday
+  %dl
+    %dt 18h
+    %dd The staff will help students to install the software needed for the workshop on their laptop. (#{link_to 'install guide', 'https://guides.railsgirls.com/install'})
+    %dt 21h
+    %dd Wrap-up.
+  %h3 Saturday
+  %dl
+    %dt 9h
+    %dd Breakfast and welcome words.
+    %dt 9h30
+    %dd We’ll form the students & coaches groups, and perform the last-minute software installs.
+    %dt 10h
+    %dd First part of the workshop — HTML and CSS. (#{link_to 'part 1 guide', 'http://brug-be.github.io/railsgirls_guide/part_1/'})
+    %dt 12h
+    %dd Lunch, and a few words from coding schools & associations.
+    %dt 13h
+    %dd Second part of the workshop — Ruby on Rails (#{link_to 'part 2 guide', 'http://brug-be.github.io/railsgirls_guide/part_2/'})
+    %dt 16h30
+    %dd Wrap-up, and what to do next, for the ones who want to go further.
+    %dt 17h
+    %dd After-work(shop) drink.
+
+%section#organizers
+  %h2 Organizers
+  %figure
+    = link_to "https://twitter.com/Ana_Daks" do
+      = image_tag 'ana.jpg', alt: 'Ana Sere'
+      %figcaption Ana
+  %figure
+    = link_to "https://twitter.com/ClemDelisse" do
+      = image_tag 'clem.jpg', alt: 'Clémentine Delisse'
+      %figcaption Clémentine
+  %section.team
+    %p And the Ruby Belgium team
+    - data.members.reject{|m| m.name == "Ana Sere"}.sort_by{|m| m.name}.each do |member|
+      %figure
+        = link_to "https://twitter.com/#{member.twitter}" do
+          = image_tag member.image, alt: member.name
+          %figcaption= member.name.split.first

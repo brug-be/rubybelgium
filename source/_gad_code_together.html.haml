@@ -1,0 +1,16 @@
+-# Event snippet for Code Together conversion page - Google Grant requirement
+
+:javascript
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-776402002/Fz7UCJPv05ABENLom_IC',
+        'event_callback': callback
+    });
+    return false;
+  }
+

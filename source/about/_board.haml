@@ -10,6 +10,7 @@
           .team-member
             = image_tag member.image, class: "img-responsive img-circle", alt: member.name
             %h4= member.name
+            %p.quote-member= member.quote
             %p.text-muted= member.description
             %ul.list-inline.social-buttons
               - if member.twitter
