@@ -19,6 +19,28 @@ helpers do
     image_tag source, options
   end
 
+  def job_positions
+    jobboard_repo_url = 'https://raw.githubusercontent.com/brug-be/jobboard/master/'
+    jobboard_md = open(jobboard_repo_url + 'README.md').read
+    opening_string_match = "## Open positions"
+    ending_string_match = "##"
+    positions_dump = jobboard_md[/#{opening_string_match}(.*?)#{ending_string_match}/m, 1]
+    matching_positions = positions_dump.scan(/\[([^\[\]]+)\]\(([^)]+)\)/)
+
+    positions = []
+    matching_positions.each do |position_name, position_path|
+      begin
+        position_md = open(jobboard_repo_url + position_path).read
+        positions << { name: position_name, path: position_path, content: position_md }
+      rescue
+        puts "Issue parsing position '#{position_name}'"
+      end
+    end
+
+    # Order by position date DESC
+    positions.sort_by { |position| position[:path] }.reverse
+  end
+
   def ruby_shops
     csv_data = open('https://raw.githubusercontent.com/brug-be/rubyshops/master/bnlrubyshops.csv').read
     hash = CSV.new(csv_data, headers: true, header_converters: :symbol)

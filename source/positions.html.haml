@@ -1,0 +1,20 @@
+---
+title: Open positions in the community - Ruby Belgium
+---
+- markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+
+%header.header
+  .layer
+    .container.text-center
+      %h1.animated.fadeInUp The #{job_positions.count} open positions in the community
+
+%section.section--alternate
+  .container
+    - job_positions.each do |position|
+      .row{id: position[:path]}
+        .col-lg-12
+          %h2.page-header.text-center
+            = position[:name]
+      .row
+        .col-md-12.col-sm-12
+          = markdown.render(position[:content])
