@@ -1,27 +1,18 @@
-# If you do not have OpenSSL installed, update
-# the following line to use 'http://' instead
 source 'https://rubygems.org'
 
-gem 'middleman', '>= 4.0.0'
+gem 'middleman', '~> 4.3.3'
+gem 'middleman-livereload', '~> 3.4.6'
+gem 'middleman-minify-html', '~> 3.4.1'
+gem 'middleman-search_engine_sitemap', '~> 1.4.0'
+gem 'middleman-sprockets', '~> 4.1.1'
+gem 'mgd', '~> 0.2.0'
 
-# Deployment
-gem 'mgd'
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'font-awesome-sass', '~> 4.4.0'
+gem 'jquery-middleman', '~> 3.1.2'
+gem 'json', '~> 2.2.0'
+gem 'nokogiri', '~> 1.10.1'
+gem 'rack', '~> 2.0.6'
 
-# Live-reloading plugin
-gem 'middleman-livereload', '>= 3.1.0'
-gem 'middleman-sprockets'
-
-gem 'json', git: 'https://github.com/flori/json', branch: 'v1.8'
-
-# For faster file watcher updates on Windows:
-gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
-
-# Windows does not come with time zone data
-gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
-
-gem 'jquery-rails', require: false
-gem 'bootstrap-sass', require: false
-gem 'font-awesome-sass', '~> 4.4.0', require: false
-
-gem 'middleman-minify-html'
-gem 'middleman-search_engine_sitemap'
+gem 'wdm', '~> 0.1.1', platforms: [:mswin, :mingw]
+gem 'tzinfo-data', '~> 1.2018.9', platforms: [:mswin, :mingw, :jruby]
