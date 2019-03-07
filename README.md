@@ -10,7 +10,7 @@ The site is based on [Middleman](https://middlemanapp.com) and the [Agency](http
 
 1. Clone this repository (`git clone git@github.com:brug-be/rubybelgium.git`)
 2. Install the gems (`cd rubybelgium ; bundle install`)
-3. Serve the site locally (`middleman server`)
+3. Serve the site locally (`middleman server`, or `bundle exec middleman server` if you get an error)
 
 ## Deployment
 
