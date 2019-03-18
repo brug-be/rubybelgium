@@ -2,7 +2,7 @@
 
 Home page for the Ruby Belgium association.
 
-http://rubybelgium.be (or http://brug-be.github.io/rubybelgium)
+https://rubybelgium.be (or https://brug-be.github.io/rubybelgium)
 
 ## Installation
 
