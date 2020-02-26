@@ -11,7 +11,7 @@ gem 'bootstrap-sass', '~> 3.4.1'
 gem 'font-awesome-sass', '~> 4.4.0'
 gem 'jquery-middleman', '~> 3.1.2'
 gem 'json', '~> 2.2.0'
-gem 'nokogiri', '~> 1.10.4'
+gem 'nokogiri', '~> 1.10.8'
 gem 'rack', '~> 2.0.8'
 
 gem 'wdm', '~> 0.1.1', platforms: [:mswin, :mingw]
