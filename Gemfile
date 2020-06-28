@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '~> 4.3.3'
+gem 'middleman', '~> 4.3.7'
 gem 'middleman-livereload', '~> 3.4.6'
 gem 'middleman-minify-html', '~> 3.4.1'
 gem 'middleman-search_engine_sitemap', '~> 1.4.0'
