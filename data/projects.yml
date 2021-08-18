@@ -1,20 +1,12 @@
--
-  name: Rails Girls Brussels
+- name: Ruby Burgers
+  tagline: Informal after-work meetups
+  logo: rubyburgers.jpg
+  link: https://gettogether.community/ruby-belgium
+- name: Rails Girls Brussels
   tagline: Web and programming workshop for girls
   logo: railsgirls.jpg
   link: /rails-girls
--
-  name: Code together - BRUG
+- name: Code together - BRUG
   tagline: Monthly meetups
   logo: brug.jpg
   link: /ruby-belgium-user-group
--
-  name: Ruby Burgers
-  tagline: Informal after-work meetups
-  logo: rubyburgers.jpg
-  link: http://www.meetup.com/ruby_belgium
--
-  name: Ruby Camp
-  tagline: One weekend, twice a year
-  logo: rubycamp.jpg
-  link: http://rubycamp.rubybelgium.be/
