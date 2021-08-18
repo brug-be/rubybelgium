@@ -1,7 +1,6 @@
 # Rails Girls events
 # The last one will be used for the main rails-girls page.
--
-  friday: 2019-10-11
-  saturday: 2019-10-12
-  students_form_url: https://lewagonbelgium.typeform.com/to/V9QfOI
-  coaches_form_url: https://otagi.typeform.com/to/LsE78d
+- friday:
+  saturday:
+  students_form_url:
+  coaches_form_url:
