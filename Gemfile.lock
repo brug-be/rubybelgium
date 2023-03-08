@@ -124,7 +124,7 @@ GEM
     public_suffix (4.0.6)
     racc (1.6.0)
     racc (1.6.0-java)
-    rack (2.1.4.1)
+    rack (2.1.4.3)
     rack-livereload (0.3.17)
       rack
     rb-fsevent (0.10.4)
