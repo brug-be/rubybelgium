@@ -12,7 +12,7 @@ gem 'font-awesome-sass', '~> 4.4.0'
 gem 'jquery-middleman', '~> 3.1.2'
 gem 'json', '~> 2.3.0'
 gem 'nokogiri', '~> 1.13.6'
-gem 'rack', '~> 2.1.4'
+gem 'rack', '~> 2.2.6'
 
 gem 'wdm', '~> 0.1.1', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', '~> 1.2018.9', platforms: [:mswin, :mingw, :jruby]
