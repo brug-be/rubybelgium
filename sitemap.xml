@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>rubybelgium.be/ruby-belgium-user-group/</loc>
-    <lastmod>2023-05-18T21:26:20+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>rubybelgium.be/</loc>
-    <lastmod>2023-05-18T21:26:20+02:00</lastmod>
+    <loc>rubybelgium.be/jobs/ruby-salaries-survey/</loc>
+    <lastmod>2023-06-19T08:57:43+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>rubybelgium.be/rubyshops/</loc>
-    <lastmod>2023-05-18T21:26:20+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>rubybelgium.be/jobs/ruby-salaries-survey/</loc>
-    <lastmod>2023-05-18T21:26:20+02:00</lastmod>
+    <lastmod>2023-06-19T08:57:43+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>rubybelgium.be/rails-girls/</loc>
-    <lastmod>2023-05-18T21:26:20+02:00</lastmod>
+    <lastmod>2023-06-19T08:57:43+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>rubybelgium.be/</loc>
+    <lastmod>2023-06-19T08:57:43+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>rubybelgium.be/about/</loc>
-    <lastmod>2023-05-18T21:26:19+02:00</lastmod>
+    <lastmod>2023-06-19T08:57:43+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>rubybelgium.be/code-of-conduct/</loc>
-    <lastmod>2023-05-18T21:26:20+02:00</lastmod>
+    <lastmod>2023-06-19T08:57:43+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>rubybelgium.be/ruby-belgium-user-group/</loc>
+    <lastmod>2023-06-19T08:57:43+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
