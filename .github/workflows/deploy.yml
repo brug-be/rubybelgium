@@ -1,21 +1,24 @@
 ---
 name: Deploy to Github Pages
-​
+
 on:
   push:
     branches:
       - master
       - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
+
       - name: Set up Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7.x
           bundler-cache: true
+
       - name: Build and Deploy 🚀
         run: bundle exec mgd
