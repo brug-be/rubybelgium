@@ -20,7 +20,7 @@ helpers do
   end
 
   def ruby_shops
-    csv_data = open('https://raw.githubusercontent.com/brug-be/rubyshops/master/bnlrubyshops.csv').read
+    csv_data = File.read("data/rubyshops/bnlrubyshops.csv")
     hash = CSV.new(csv_data, headers: true, header_converters: :symbol)
     hash.to_a(&:to_hash).sort_by { |hsh| hsh[:city] }
   end
