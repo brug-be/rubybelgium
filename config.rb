@@ -1,17 +1,6 @@
 require 'open-uri'
 
 helpers do
-  def link_to_if(condition, name, options = {}, html_options = {}, &block)
-    if condition
-      link_to(name, options, html_options)
-    else
-      if block_given?
-        block.arity <= 1 ? capture(name, &block) : capture(name, options, html_options, &block)
-      else
-        ERB::Util.html_escape(name)
-      end
-    end
-  end
 
   def image_tag_2x(source, options = {})
     source_2x = source.dup.insert(source.rindex('.'), '@2x')
